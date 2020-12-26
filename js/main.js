@@ -30,9 +30,9 @@ btn.on('click', function(e) {
     // Optional parameters
     loop: true,
   
-    autoplay: {
-      delay: 5000,
-    },
+    //autoplay: {
+//      delay: 5000,
+  //  },
     navigation: {
       prevEl: '.portfolio-buttons__left',
       nextEl: '.portfolio-buttons__right',

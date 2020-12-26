@@ -225,23 +225,27 @@
         <div class="portfolio-wrapper">
           <h2 class="portfolio-title">Опубликованный проект</h2>
           <div class="portfolio-slata">
-            <h3 class="portfolio-subtitle">«Моя Слата»</h3>
-            <a
-              href="https://apps.apple.com/ru/app/моя-слата/id1468444683"
-              class="portfolio-slata__link"
-              >https://apps.apple.com/ru/app/моя-слата/id1468444683</a
-            >
+            <div class="portfolio-slata-header">
+              <h3 class="portfolio-subtitle">«Моя Слата»</h3>
+              <a
+                href="https://apps.apple.com/ru/app/моя-слата/id1468444683"
+                class="portfolio-slata__link"
+                target="_blank"
+                >https://apps.apple.com/ru/app/моя-слата/id1468444683</a
+              >
+            </div>
+            <!-- /.portfolio-slata-header -->
             <div class="portfolio-slider">
               <a href="#" class="portfolio-buttons__left">
                 <svg
                   class="portfolio-buttons__image portfolio-buttons__image--left"
                 >
-                  <use xlink:href="img/icons.svg#button_left"></use>
+                  <use xlink:href="img/icons.svg#arrow-prev"></use>
                 </svg>
               </a>
               <div class="swiper-container portfolio-slider">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide portfolio-slide">
                     <img
                       src="img/my-slata-1.jpg"
                       alt="screen one"
@@ -284,11 +288,37 @@
                 <svg
                   class="portfolio-buttons__image portfolio-buttons__image--right"
                 >
-                  <use xlink:href="img/icons.svg#button_right"></use>
+                  <use xlink:href="img/icons.svg#arrow-next"></use>
                 </svg>
               </a>
             </div>
             <!-- /.training-slider -->
+            <h3 class="portfolio-subtitle">Задача</h3>
+            <p class="portfolio-text">
+              Разработать информационное мобильное приложение сети супермаркетов
+              «Слата» в городе Иркутск. Приложение должно информировать об
+              акциях компании, предоставлять список магазинов на карте,
+              формировать список покупок, предоставлять возможность
+              воспользоваться купонами на скидку, сканировать штрих-код товара с
+              последующим выводом его стоимости, а также позволять пользователю
+              воспользоваться индивидуальной программой лояльности.
+            </p>
+            <h3 class="portfolio-subtitle">Срок</h3>
+            <p class="portfolio-text">6 недель</p>
+            <h3 class="portfolio-subtitle">Описание проекта</h3>
+            <p class="portfolio-text">
+              Интерфейс приложения построен в соответствии с дизайн-макетом,
+              разработанным компанией «Слата». Приложение использует API
+              предоставляемый основным бэкендом компании, а в рамках программы
+              лояльности клиентов — использовался API компании Loymax
+              Solutions.После сдачи в установленный срок основного функционала
+              приложения были поставлены задачи по созданию дополнительных
+              опций — формирование по штрих-кодам товаров покупательской корзины
+              с расчетом общей стоимости покупки и передачей информации в
+              бэкенд.Указанные доработки были реализованы.Приложение прошло
+              проверку на соответствие стандартам Apple (HIG) и было
+              опубликовано в AppStore.
+            </p>
           </div>
           <!-- /.portfoli-slata -->
         </div>

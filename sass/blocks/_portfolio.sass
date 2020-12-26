@@ -3,25 +3,25 @@
     width: 764px
   &-title
     font-style: normal
-    font-weight: bold
-    font-size: 26px
+    font-weight: normal
+    font-size: 36px
     line-height: 38px
-    color: $title-color
+    color: #042042
     padding: 0
-    margin: 0 0 5px 0
+    margin: 0 0 20px 0
   &-subtitle
-    font-style: italic
-    font-weight: 600
-    font-size: 20px
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
     line-height: 22px
-    color: $primary
+    color: #063873
     padding: 0
-    margin: 0 0 5px 0
+    margin: 0 0 10px 0
   &-text
     font-style: normal
     font-weight: normal
     font-size: 18px
-    line-height: 22px
+    line-height: 26px
     color: $text-color
     padding: 0
     margin: 0 0 15px 0
@@ -41,6 +41,45 @@
     flex-direction: row
     justify-content: center
     align-items: center
+    flex-basis: 80%
+    height: 531px
+    margin: 25px auto
+  &-slata
+    &__link
+      margin: 0
+      padding: 0
+      text-decoration: none
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 26px
+      color: $text-color
+      padding: 0
+      margin: 0 0 15px 0
+      &:hover
+        text-decoration: underline
+    &-header
+      margin-bottom: 20px
+  &-buttons
+    display: flex
+    flex-basis: 8%
+    justify-content: center
+    &__image
+      &--left, &--right
+        width: 40px
+        height: 40px
+        filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
+        outline: none
+    &__right, &__left
+      width: 50px
+      text-decoration: none
+  &-screen
+    display: flex
+    flex-basis: 50%
+    &:first-child
+      display: flex
+      flex-basis: 50%
+      margin-right: 15px
 .swiper
   &-container
     width: 50%
@@ -61,16 +100,3 @@
   &-slide
     display: flex
     justify-content: center
-.certificates
-  &-buttons
-    width: 500px
-    display: flex
-    justify-content: space-between
-    &__image
-      &--left, &--right
-        width: 40px
-        height: 40px
-        filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
-        outline: none
-    &__right, &__left
-      text-decoration: none
