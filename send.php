@@ -11,7 +11,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новое обращение Eyha";
+$title = "Новое обращение на странице портфолио";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
@@ -39,7 +39,7 @@ try {
 
     // Получатель письма
     //$mail->addAddress('islamov.tema@yandex.ru');
-    $mail->addAddress('starkovaleksey2017@gmail.com');
+    $mail->addAddress('stgregor1@icloud.com');
 
 // Отправка сообщения
 $mail->isHTML(true);
