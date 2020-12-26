@@ -127,7 +127,7 @@
             освоил базовые инструменты языка Swift. По окончании обучения прошел
             тестирование в соответствии с освоенной программой курса.
           </p>
-          <div class="training-slider">
+          <div class="training-slider certificates-buttons">
             <a href="#" class="certificates-buttons__left">
               <svg
                 class="certificates-buttons__image certificates-buttons__image--left"
@@ -236,7 +236,7 @@
             </div>
             <!-- /.portfolio-slata-header -->
             <div class="portfolio-slider">
-              <a href="#" class="portfolio-buttons__left">
+              <a href="#" class="portfolio-buttons portfolio-buttons__left">
                 <svg
                   class="portfolio-buttons__image portfolio-buttons__image--left"
                 >
@@ -284,7 +284,7 @@
                 </div>
               </div>
 
-              <a href="#" class="portfolio-buttons__right">
+              <a href="#" class="portfolio-buttons portfolio-buttons__right">
                 <svg
                   class="portfolio-buttons__image portfolio-buttons__image--right"
                 >
@@ -325,6 +325,115 @@
       </div>
     </section>
     <!-- /.portfolio -->
+    <section class="footer">
+      <div class="container container-footer">
+        <div class="footer-wrapper">
+          <h2 class="footer-title">Контакты для связи</h2>
+          <p class="footer-text">
+            В настоящий момент открыт для предложений о работе.Готов участвовать
+            в проектах на полный или частичный рабочий день.Удаленная работа
+            предпочтительна, однако готов рассмотреть вариант с переездом в
+            другой город.
+          </p>
+          <div class="footer-block">
+            <div class="footer-contacts">
+              <div class="footer-contacts-phone">
+                <a
+                  href="tel:89148739332"
+                  class="footer-contacts-phone footer-contacts-phone__link"
+                >
+                  <img
+                    src="img/phone-call.svg"
+                    alt="Icon: phone-call"
+                    class="footer-contacts-phone__link footer-contacts-phone__link--icon"
+                  />
+                  <span
+                    class="footer-contacts-phone__link footer-contacts-phone__link--num"
+                    >+7 (914) 873 93 32</span
+                  >
+                </a>
+              </div>
+              <!-- /.footer-contacts-phone -->
+              <div class="footer-contacts-email">
+                <a
+                  href="mailto:stgregor1@icloud.com"
+                  class="footer-contacts-email footer-contacts-email__link"
+                >
+                  <img
+                    src="img/email.svg"
+                    alt="Icon: email"
+                    class="footer-contacts-email__link footer-contacts-email__link--icon"
+                  />
+                  <span
+                    class="footer-contacts-email__link footer-contacts-email__link--email"
+                    >stgregor1@icloud.com</span
+                  >
+                </a>
+              </div>
+              <!-- /.footer-contacts-email -->
+              <div class="footer-contacts-telegram">
+                <a
+                  href="https://telegram.me/@StarkovGeorgiy"
+                  class="footer-contacts-telegram footer-contacts-telegram__link"
+                  target="_blank"
+                >
+                  <img
+                    src="img/telegram_icon.svg"
+                    alt="Icon: telegram"
+                    class="footer-contacts-telegram__link footer-contacts-telegram__link--icon"
+                  />
+                  <span
+                    class="footer-contacts-telegram__link footer-contacts-telegram__link--telegram"
+                    >@StarkovGeorgiy</span
+                  >
+                </a>
+              </div>
+              <!-- /.footer-contacts-telegram -->
+            </div>
+            <!-- /.footer-contacts -->
+            <div class="footer-form">
+              <h3 class="footer-subtitle">Напишите мне</h3>
+              <form action="send.php" method="POST" class="form footer__form">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Имя *"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+                <div class="footer__input-group footer__input-group--phone">
+                  <input
+                    type="tel"
+                    class="input footer__input phoneInput"
+                    placeholder="Телефон*"
+                    name="phone"
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+                <textarea
+                  cols="30"
+                  rows="10"
+                  class="message footer__message"
+                  placeholder="Сообщение"
+                  name="message"
+                ></textarea>
+                <button class="button footer__button" type="submit">
+                  Send
+                </button>
+                <span class="footer__info">* Обязательное поле</span>
+              </form>
+            </div>
+            <!-- /.footer-form -->
+          </div>
+          <!-- /.footer-contacts-block -->
+        </div>
+      </div>
+    </section>
+    <!-- /.footer -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bgscroll.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
