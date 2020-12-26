@@ -1,0 +1,95 @@
+.header
+  &-logo
+    width: 40px
+    height: 40px
+    filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
+  &-navbar
+    width: 100%
+    min-height: 80px
+    display: flex
+    justify-content: space-between
+    margin: 0 0 42px 0
+    padding: 0
+    align-items: center
+  &-menu
+    width: 770px
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    padding: 0
+    margin: 0
+    text-align: center
+    &__item
+      width: 170px
+      min-height: 44px
+      font-family: Open Sans, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 22px
+      line-height: 35px
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      cursor: pointer
+      color: $title-color
+      &:hover
+        text-shadow: 1px 1px 2px $bgr-legend, 0 0 1em $text-color
+    &__link
+      color: $title-color
+      text-decoration: none
+  &-main
+    display: flex
+    &__text
+      &-block
+        width: 764px
+        min-height: 465px
+        display: flex
+        flex-wrap: wrap
+        margin: 0 80px 0 0
+        padding: 0
+        align-items: flex-start
+        flex-direction: column
+        justify-content: center
+    &-title
+      font-style: normal
+      font-weight: normal
+      font-size: 50px
+      line-height: 38px
+      color: $title-color
+      margin: 0 0 25px 0
+      /*text-shadow: 0 0 8px rgba(0,0,0,.5)*/
+    &-subtitle
+      font-style: normal
+      font-weight: 500
+      font-size: 26px
+      line-height: 38px
+      color: #063873
+      margin: 0
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 28px
+      color: $text-color
+    &-button
+      width: 285px
+      min-height: 50px
+      background-color: $primary
+      color: #ffffff
+      border-radius: 8px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 20px
+      display: flex
+      align-items: center
+      text-align: center
+      justify-content: center
+      outline: none
+      &:hover
+        background-color: #3982c6
+    &__photo
+      width: 273px
+      height: 465px
+      border-radius: 8px
