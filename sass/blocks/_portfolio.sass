@@ -44,6 +44,12 @@
     flex-basis: 80%
     height: 531px
     margin: 25px auto
+  &-slide
+    width: 100%
+    height: 100%
+    position: relative
+    border-radius: 8px
+    overflow: hidden
   &-slata
     &__link
       margin: 0
@@ -73,12 +79,17 @@
     &__right, &__left
       width: 50px
       text-decoration: none
+      &:focus
+        outline: none
+        border: none
   &-screen
     display: flex
-    flex-basis: 50%
+    height: 100%
+    width: auto
+    /*flex-basis: 50%*/
     &:first-child
-      display: flex
-      flex-basis: 50%
+      /*display: flex*/
+      /*flex-basis: 50%*/
       margin-right: 15px
 .swiper
   &-container
