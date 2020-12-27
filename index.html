@@ -241,10 +241,49 @@
           </p>
         </div>
         <!-- /.training-wrapper -->
+        <div class="training-certificates-block">
+          <img
+            src="img/sert-1.jpg"
+            alt="sertificate one"
+            class="training-certificate training-certificate--1"
+            data-toggle="modal-certificate"
+          />
+          <img
+            src="img/sert-2.jpg"
+            alt="sertificate two"
+            class="training-certificate training-certificate--2"
+            data-toggle="modal-certificate"
+          />
+          <img
+            src="img/sert-3.jpg"
+            alt="sertificate three"
+            class="training-certificate training-certificate--3"
+            data-toggle="modal-certificate"
+          />
+        </div>
+        <!-- /.training-certificates -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.training -->
+
+    <div class="modal-certificate">
+      <div class="modal-certificate__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal-certificate__dialog">
+        <button class="menu-close hiden">
+          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
+        </button>
+        <img
+          src="img/sert-1.jpg"
+          alt="sertificate one"
+          class="training-certificate training-certificate__modal"
+          data-toggle="modal-certificate"
+        />
+      </div>
+      <!-- /.modal-certificate__dialog -->
+    </div>
+    <!-- /.modal -->
     <section id="works" class="works">
       <div class="container container-works">
         <div class="works-wrapper">
@@ -274,8 +313,8 @@
     <!-- /.works -->
     <section id="portfolio" class="portfolio">
       <div class="container container-portfolio">
+        <h2 class="portfolio-title">Опубликованный проект</h2>
         <div class="portfolio-wrapper">
-          <h2 class="portfolio-title">Опубликованный проект</h2>
           <div class="portfolio-slata">
             <div class="portfolio-slata-header">
               <h3 class="portfolio-subtitle">«Моя Слата»</h3>
@@ -287,6 +326,76 @@
               >
             </div>
             <!-- /.portfolio-slata-header -->
+
+            <h3 class="portfolio-subtitle">Задача</h3>
+            <p class="portfolio-text">
+              Разработать информационное мобильное приложение сети супермаркетов
+              «Слата» в городе Иркутск. Приложение должно информировать об
+              акциях компании, предоставлять список магазинов на карте,
+              формировать список покупок, предоставлять возможность
+              воспользоваться купонами на скидку, сканировать штрих-код товара с
+              последующим выводом его стоимости, а также позволять пользователю
+              воспользоваться индивидуальной программой лояльности.
+            </p>
+            <h3 class="portfolio-subtitle">Срок</h3>
+            <p class="portfolio-text">6 недель</p>
+            <h3 class="portfolio-subtitle">Описание проекта</h3>
+            <p class="portfolio-text">
+              Интерфейс приложения построен в соответствии с дизайн-макетом,
+              разработанным компанией «Слата». Приложение использует API
+              предоставляемый основным бэкендом компании, а в рамках программы
+              лояльности клиентов — использовался API компании Loymax
+              Solutions.<br />
+              После сдачи основного функционала приложения были поставлены
+              задачи по созданию дополнительных опций, например - создание
+              считывателя цен с возможностю вывести qrCode (содержащий
+              наименования товаров и общей цены) для касс самообслуживания.
+              Данный функционал позволяет сканировать один qrCode вместо каждого
+              штрихкода приобретаемых товаров, что экономит время и позволяет
+              сразу перейти к оплате и покинуть магазин.<br />
+              Приложение прошло проверку на соответствие стандартам Apple (HIG)
+              и было опубликовано в AppStore.
+            </p>
+          </div>
+          <!-- /.portfoli-slata -->
+          <div class="portfolio-screenshots">
+            <div class="portfolio-screenshots__left">
+              <img
+                src="img/my-slata-1.jpg"
+                alt="screen one"
+                class="portfolio-screen"
+              />
+              <img
+                src="img/my-slata-2.jpg"
+                alt="sertificate two"
+                class="portfolio-screen"
+              />
+              <img
+                src="img/my-slata-3.jpg"
+                alt="sertificate three"
+                class="portfolio-screen"
+              />
+            </div>
+            <!-- /.portfolio-screenshots__left -->
+            <div class="portfolio-screenshots__right">
+              <img
+                src="img/my-slata-4.jpg"
+                alt="sertificate three"
+                class="portfolio-screen"
+              />
+              <img
+                src="img/my-slata-5.jpg"
+                alt="sertificate three"
+                class="portfolio-screen"
+              />
+              <img
+                src="img/my-slata-6.jpg"
+                alt="sertificate three"
+                class="portfolio-screen"
+              />
+            </div>
+            <!-- /.portfolio-screenshots__right -->
+            <!--
             <div class="portfolio-slider">
               <a href="#" class="portfolio-buttons portfolio-buttons__left">
                 <svg
@@ -344,38 +453,10 @@
                 </svg>
               </a>
             </div>
-            <!-- /.training-slider -->
-            <h3 class="portfolio-subtitle">Задача</h3>
-            <p class="portfolio-text">
-              Разработать информационное мобильное приложение сети супермаркетов
-              «Слата» в городе Иркутск. Приложение должно информировать об
-              акциях компании, предоставлять список магазинов на карте,
-              формировать список покупок, предоставлять возможность
-              воспользоваться купонами на скидку, сканировать штрих-код товара с
-              последующим выводом его стоимости, а также позволять пользователю
-              воспользоваться индивидуальной программой лояльности.
-            </p>
-            <h3 class="portfolio-subtitle">Срок</h3>
-            <p class="portfolio-text">6 недель</p>
-            <h3 class="portfolio-subtitle">Описание проекта</h3>
-            <p class="portfolio-text">
-              Интерфейс приложения построен в соответствии с дизайн-макетом,
-              разработанным компанией «Слата». Приложение использует API
-              предоставляемый основным бэкендом компании, а в рамках программы
-              лояльности клиентов — использовался API компании Loymax
-              Solutions.<br />
-              После сдачи основного функционала приложения были поставлены
-              задачи по созданию дополнительных опций, например - создание
-              считывателя цен с возможностю вывести qrCode (содержащий
-              наименования товаров и общей цены) для касс самообслуживания.
-              Данный функционал позволяет сканировать один qrCode вместо каждого
-              штрихкода приобретаемых товаров, что экономит время и позволяет
-              сразу перейти к оплате и покинуть магазин.<br />
-              Приложение прошло проверку на соответствие стандартам Apple (HIG)
-              и было опубликовано в AppStore.
-            </p>
+            -->
+            <!-- /.portfolio-slider -->
           </div>
-          <!-- /.portfoli-slata -->
+          <!-- /.portfolio-screenshots -->
         </div>
       </div>
     </section>
@@ -386,9 +467,9 @@
           <h2 class="footer-title">Контакты для связи</h2>
           <p class="footer-text">
             В настоящий момент открыт для предложений о работе.Готов участвовать
-            в проектах на полный или частичный рабочий день.Удаленная работа
-            предпочтительна, однако готов рассмотреть вариант с переездом в
-            другой город.
+            в проектах на полный или частичный рабочий день.<br />
+            Удаленная работа предпочтительна, однако готов рассмотреть вариант с
+            переездом в другой город.
           </p>
           <div class="footer-block">
             <div class="footer-contacts">

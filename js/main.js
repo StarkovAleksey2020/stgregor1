@@ -23,6 +23,31 @@ $(document).ready(function () {
     goTopButton.toggleClass("hiden");
   })
 
+// Модальное окно с сертификатами
+  var modalSertificateButton = $('[data-toggle=modal-certificate]');
+  var closeModalButton = $(".modal__close");
+  var modalOverlay = $(".modal-certificate__overlay");
+  modalSertificateButton.on('click', openModalSertificate);
+  closeModalButton.on('click', closeModalSertificate);
+  modalOverlay.on('click', closeModalSertificate);
+
+  function openModalSertificate() {
+      console.log('!____');
+    var modalOverlay = $(".modal-certificate__overlay");
+    var modalDialog = $(".modal-certificate__dialog");
+    modalOverlay.addClass("modal-certificate__overlay--visible");
+    modalDialog.addClass("modal-certificate__dialog--visible");
+    modalDialog.scrollTop(0);
+  }
+  function closeModalSertificate(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-certificate__overlay");
+    var modalDialog = $(".modal-certificate__dialog");
+    modalOverlay.removeClass("modal-certificate__overlay--visible");
+    modalDialog.removeClass("modal-certificate__dialog--visible");
+  }
+
+
 
   var btn = $('#button');
 
