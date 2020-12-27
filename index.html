@@ -26,12 +26,12 @@
     <!-- Back to top button -->
     <a id="button"></a>
     <header id="header" class="header">
-      <div class="container container-main">
+      <div class="container container-navbar">
         <div class="header-navbar">
           <a href="index.html" class="logo">
             <!--<img src="img/logo.svg" alt="Logo: mountains" class="header-logo" />-->
             <svg class="header-logo">
-              <use xlink:href="img/icons.svg#apple"></use>
+              <use xlink:href="img/icons.svg#apple-developer"></use>
             </svg>
           </a>
           <ul class="header-menu">
@@ -41,12 +41,58 @@
             <li class="header-menu__item">
               <a href="#training" class="header-menu__link">Где учился</a>
             </li>
-            <li class="header-menu__item">Портфолио</li>
-            <li class="header-menu__item">Где работал</li>
-            <li class="header-menu__item">Контакты</li>
+            <li class="header-menu__item">
+              <a href="#portfolio" class="header-menu__link">Портфолио</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#works" class="header-menu__link">Где работал</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#footer" class="header-menu__link">Контакты</a>
+            </li>
           </ul>
+          <button class="menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+          <button class="menu-close hiden">
+            <img
+              src="img/close.svg"
+              alt="Icon: close"
+              class="menu-close-image"
+            />
+          </button>
         </div>
         <!-- /.header-navbar -->
+        <div class="navbar-bottom">
+          <div class="container-navbar container-navbar__bottom">
+            <ul class="navbar-menu">
+              <li class="navbar-menu__item">
+                <a href="#skills" class="navbar-menu__link">Я умею</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#training" class="navbar-menu__link">Где учился</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#portfolio" class="navbar-menu__link">Портфолио</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#works" class="navbar-menu__link">Где работал</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#footer" class="navbar-menu__link">Контакты</a>
+              </li>
+            </ul>
+            <!-- /.navbar-menu -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.navbar-bottom -->
+      </div>
+    </header>
+    <section class="main">
+      <div class="container container-main">
         <div class="header-main">
           <div class="header-main__text-block">
             <h1 class="header-main-title">Привет !</h1>
@@ -59,7 +105,12 @@
               имеются мои проекты из портфолио, описание моих навыков и
               контактные данные
             </p>
-            <button class="header-main-button">Смотреть портфолио</button>
+            <button
+              class="header-main-button"
+              onclick="location.href='#portfolio'"
+            >
+              Смотреть портфолио
+            </button>
           </div>
           <!-- /.header-main__text-block -->
           <img
@@ -71,7 +122,8 @@
         <!-- /.header-main -->
       </div>
       <!-- /.container -->
-    </header>
+    </section>
+    <!-- /.main -->
     <section id="skills" class="skills">
       <div class="container container-skills">
         <div class="skills-wrapper">
@@ -193,7 +245,7 @@
       <!-- /.container -->
     </section>
     <!-- /.training -->
-    <section class="works">
+    <section id="works" class="works">
       <div class="container container-works">
         <div class="works-wrapper">
           <h2 class="works-title">Где работал</h2>
@@ -220,7 +272,7 @@
       <!--/.container-works-->
     </section>
     <!-- /.works -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="container container-portfolio">
         <div class="portfolio-wrapper">
           <h2 class="portfolio-title">Опубликованный проект</h2>
@@ -328,7 +380,7 @@
       </div>
     </section>
     <!-- /.portfolio -->
-    <section class="footer">
+    <section id="footer" class="footer">
       <div class="container container-footer">
         <div class="footer-wrapper">
           <h2 class="footer-title">Контакты для связи</h2>

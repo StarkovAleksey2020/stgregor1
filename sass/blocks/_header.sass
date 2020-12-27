@@ -1,6 +1,6 @@
 .header
   &-logo
-    width: 40px
+    width: 140px
     height: 40px
     filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
   &-navbar
@@ -12,7 +12,7 @@
     padding: 0
     align-items: center
   &-menu
-    width: 770px
+    width: 75%
     list-style-type: none
     display: flex
     justify-content: space-between
@@ -93,3 +93,83 @@
       width: 273px
       height: 465px
       border-radius: 8px
+.navbar
+  &-top
+    min-width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    /*&__menu
+     &-button
+     display: none*/
+  &-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    margin-top: 15px
+    &__top
+      display: flex
+      flex-direction: row
+    &__main
+      display: flex
+      list-style-type: none
+      align-items: center
+      justify-content: space-between
+      margin: 0 13px 0 0
+      padding: 0
+    &__item
+      margin-right: 40px
+      max-width: fit-content
+      list-style-type: none
+    &__link
+      font-family: Open Sans
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $primary
+      text-decoration: none
+      margin-right: 40px
+      color: #fff
+  &-exit
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $secondary
+    border: 2px solid $secondary
+    padding: 11px 20px
+    border-radius: 8px
+    text-decoration: none
+    /*background: #FFF*/
+    background: inherit
+    cursor: pointer
+    outline: none
+    &:hover
+      outline: none
+      color: $quote
+      border: 2px solid $quote
+  &-bottom
+    display: none
+    &--visible
+      display: block
+      height: 92%
+      position: fixed
+      top: 71px
+      left: 0
+      right: 0
+      bottom: 0
+      overflow: hidden
+.menu
+  &-button
+    display: none
+    &__line
+      width: 16px
+      height: 1px
+      background-color: #333
+  &-close
+    display: none
+    &-image
+      filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)

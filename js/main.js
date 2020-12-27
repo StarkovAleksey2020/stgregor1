@@ -1,4 +1,29 @@
 $(document).ready(function () {
+  var menuButton = $(".menu-button");
+  var menuButtonClose = $(".menu-close");
+  var goTopButton = $("#button");
+  var navbarMenuItem = $(".navbar-menu__link");
+
+  navbarMenuItem.on('click', function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    menuButton.toggleClass("hiden");
+    menuButtonClose.toggleClass("hiden");
+    goTopButton.toggleClass("hiden");
+  })
+  menuButton.on('click', function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    menuButton.toggleClass("hiden");
+    menuButtonClose.toggleClass("hiden");
+    goTopButton.toggleClass("hiden");
+  })
+  menuButtonClose.on('click', function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    menuButton.toggleClass("hiden");
+    menuButtonClose.toggleClass("hiden");
+    goTopButton.toggleClass("hiden");
+  })
+
+
   var btn = $('#button');
 
   $(window).scroll(function() {

@@ -6,18 +6,30 @@ body
 .container
   width: 1408px
   &-main
-    width: 1330px
+    width: 90%
     min-height: 670px
     margin: 0 auto
+  &-navbar
+    max-width: 90%
+    min-height: 100px
+    display: flex
+    align-items: center
+    margin: 0 auto 36px auto
+    &__bottom
+      display: none
+      height: 100%
+      width: 100%
+      padding-top: 0
+      background-color: $primary
   &-skills
-    width: 1330px
+    width: 90%
     min-height: 470px
     display: flex
     flex-direction: column
     justify-content: flex-start
     align-items: flex-start
     margin: 0 auto
-    padding: 40px 0
+    padding: 70px 0
     &::before
       content: ''
       position: absolute
@@ -30,7 +42,7 @@ body
       background-color: rgba($dark, 0.8)
       z-index: 0
   &-training
-    width: 1330px
+    width: 90%
     min-height: 988px
     display: flex
     flex-direction: column
@@ -39,7 +51,7 @@ body
     margin: 0 auto
     padding: 40px 0
   &-works
-    width: 1330px
+    width: 90%
     min-height: 380px
     display: flex
     flex-direction: column
@@ -59,7 +71,7 @@ body
       background-color: rgba($dark, 0.8)
       z-index: 0
   &-portfolio
-    width: 1330px
+    width: 90%
     min-height: 988px
     display: flex
     flex-direction: column
@@ -68,7 +80,7 @@ body
     margin: 0 auto
     padding: 40px 0
   &-footer
-    width: 1330px
+    width: 90%
     min-height: 400px
     display: flex
     flex-direction: column
@@ -76,6 +88,8 @@ body
     align-items: flex-start
     margin: 0 auto
     padding: 40px 0
+.hiden
+  display: none!important
 #button
   display: inline-block
   background-color: $quote
@@ -85,7 +99,7 @@ body
   border-radius: 4px
   position: fixed
   bottom: 30px
-  right: 20%
+  right: 10%
   transition: background-color .3s, opacity .5s, visibility .5s
   opacity: 0
   visibility: hidden
