@@ -26,9 +26,12 @@
     &-wrapper
       width: 90%
     &-slider
-      height: 400px
+      height: 600px
     &-screen
       width: 85%
+    &-buttons
+      &-block
+        width: 98%
   label.invalid
     font-size: 10px
   .certificates
@@ -173,6 +176,16 @@
     &-text
       font-size: 14px
       line-height: 20px
+    &-slider
+      /*height: 500px*/
+      margin: 80px auto
+    &-buttons
+      &-block
+        width: 95%
+      &__image
+        &--right, &--left
+          width: 25px
+          height: 25px
   .footer
     &-title
       font-size: 32px
@@ -248,6 +261,11 @@
             text-align: center
       &__photo
         margin: 0 auto
+  .portfolio
+    &-slider
+      height: 550px
+      margin: 60px auto
+
   .footer
     &-block
       flex-direction: column
@@ -266,7 +284,8 @@
       min-height: 300px
     &-buttons
       &-block
-        top: 250px
+        top: 205px
+        width: 98%
       &__image
         &--right, &--left
           width: 18px
@@ -275,7 +294,31 @@
   .container
   .certificates
     &-slider
-      width: 260px
+      width: 280px
       min-height: 200px
+  .skills
+    &-title
+      font-size: 30px
+      line-height: 32px
+  .training
+    &-title
+      font-size: 30px
+      line-height: 32px
+  .works
+    &-title
+      font-size: 30px
+      line-height: 32px
+  .portfolio
+    &-title
+      font-size: 30px
+      line-height: 32px
+  .footer
+    &-title
+      font-size: 30px
+      line-height: 32px
 @media (max-width: 320px)
   .container
+  .certificates
+    &-slider
+      width: 260px
+      min-height: 180px
