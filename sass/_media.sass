@@ -37,6 +37,8 @@
         width: 98%
 @media (max-width: 768px)
   .container
+    &-training
+      flex-direction: column
     &-navbar
       display: flex
       align-items: center
@@ -77,7 +79,21 @@
       &__link
         color: #FFFFFF
     &-main
-      margin: 200px auto
+      margin: 180px auto
+      display: flex
+      &-title
+        font-size: 40px
+        line-height: 42px
+      &-subtitle
+        font-size: 24px
+        line-height: 32px
+      &__text
+        &-block
+          flex-basis: 50%
+          margin: 0 10px 0 0
+      &-text
+        font-size: 18px
+        line-height: 24px
   .navbar
     position: fixed
     top: 0
@@ -116,26 +132,82 @@
   .skills
     &-wrapper
       width: 100%
+    &-title
+      font-size: 32px
+    &-text
+      font-size: 14px
+      line-height: 20px
   .training
     &-wrapper
       width: 100%
     &-certificate
       &--1, &--2, &--3
-        width: 70%
+        width: 30%
+    &-certificates
+      &-block
+        min-height: auto
+        flex-direction: row
+        justify-content: center
+    &-title
+      font-size: 32px
+    &-text
+      font-size: 14px
+      line-height: 20px
   .works
     &-wrapper
       width: 100%
+    &-title
+      font-size: 32px
+    &-text
+      font-size: 14px
+      line-height: 20px
   .portfolio
     &-wrapper
       width: 100%
+      flex-direction: column
     &-screen
       height: auto
       width: 80%
+    &-title
+      font-size: 32px
+    &-text
+      font-size: 14px
+      line-height: 20px
   .footer
+    &-title
+      font-size: 32px
+    &-subtitle
+      font-size: 16px
+      line-height: 20px
+    &-text
+      font-size: 14px
+      line-height: 20px
     &-contacts
       flex-basis: 32%
-      &-email, &-phone, &-telegram
+      &-email
         font-size: 16px
+        &__link
+          &--email
+            font-size: 14px
+            line-height: 20px
+          &--icon
+            margin: 0 10px 0 0
+      &-phone
+        font-size: 16px
+        &__link
+          &--num
+            font-size: 14px
+            line-height: 20px
+          &--icon
+            margin: 0 15px 0 0
+      &-telegram
+        font-size: 16px
+        &__link
+          &--telegram
+            font-size: 14px
+            line-height: 20px
+          &--icon
+            margin: 0 5px 0 0
     &__input
       &-group
         flex-basis: 48%
@@ -143,6 +215,9 @@
           margin-right: 0
     &__message
       flex-basis: 100%
+    &__button
+      font-size: 16px
+      line-height: 20px
   .certificates
     &-slider
       width: 500px
@@ -155,6 +230,34 @@
         &--right, &--left
           width: 25px
           height: 25px
+@media (max-width: 650px)
+  .header
+    &-main
+      display: flex
+      flex-direction: column
+      margin: 100px auto
+      &__text
+        &-block
+          display: none
+          &--upper, &--lower
+            display: flex
+            min-height: 150px
+            width: 100%
+            margin: 0 0 20px 0
+            align-items: center
+            text-align: center
+      &__photo
+        margin: 0 auto
+  .footer
+    &-block
+      flex-direction: column
+    &-form
+      margin-top: 20px
+@media (max-width: 450px)
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%
 @media (max-width: 576px)
   .container
   .certificates
