@@ -23,7 +23,64 @@ $(document).ready(function () {
     goTopButton.toggleClass("hiden");
   })
 
+// Модальное окно со слайдером с сертификатами
+  var modalSertificateButton = $('[data-toggle=modal-certificate]');
+  var closeModalButton = $(".menu-close-certificate");
+  var modalOverlay = $(".modal-certificate__overlay");
+
+  modalSertificateButton.on('click', openModalSertificate);
+  closeModalButton.on('click', closeModalSertificate);
+  modalOverlay.on('click', closeModalSertificate);
+
+  function openModalSertificate() {
+    var modalOverlay = $(".modal-certificate__overlay");
+    var modalDialog = $(".modal-certificate__dialog");
+    var closeModalButton = $(".menu-close-certificate");
+    closeModalButton.addClass("menu-close-certificate--visible");
+    modalOverlay.addClass("modal-certificate__overlay--visible");
+    modalDialog.addClass("modal-certificate__dialog--visible");
+  }
+  function closeModalSertificate(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-certificate__overlay");
+    var modalDialog = $(".modal-certificate__dialog");
+    var closeModalButton = $(".menu-close-certificate");
+    closeModalButton.removeClass("menu-close-certificate--visible");
+    modalOverlay.removeClass("modal-certificate__overlay--visible");
+    modalDialog.removeClass("modal-certificate__dialog--visible");
+  }
+
+// Модальное окно со слайдером с портфолио
+  var modalPortfolioButton = $('[data-toggle=modal-portfolio]');
+  var closeModalButtonPortfolio = $(".menu-close-portfolio");
+  var modalOverlayPortfolio = $(".modal-portfolio__overlay");
+
+  modalPortfolioButton.on('click', openModalPortfolio);
+  closeModalButtonPortfolio.on('click', closeModalPortfolio);
+  modalOverlayPortfolio.on('click', closeModalPortfolio);
+
+  function openModalPortfolio() {
+    var modalOverlay = $(".modal-portfolio__overlay");
+    var modalDialog = $(".modal-portfolio__dialog");
+    var closeModalButton = $(".menu-close-portfolio");
+    closeModalButton.addClass("menu-close-portfolio--visible");
+    modalOverlay.addClass("modal-portfolio__overlay--visible");
+    modalDialog.addClass("modal-portfolio__dialog--visible");
+  }
+  function closeModalPortfolio(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-portfolio__overlay");
+    var modalDialog = $(".modal-portfolio__dialog");
+    var closeModalButton = $(".menu-close-portfolio");
+    closeModalButton.removeClass("menu-close-portfolio--visible");
+    modalOverlay.removeClass("modal-portfolio__overlay--visible");
+    modalDialog.removeClass("modal-portfolio__dialog--visible");
+  }
+
+
+
 // Модальное окно с сертификатами - one
+  /*
   var modalSertificateButtonOne = $('[data-toggle=modal-certificate-one]');
   var closeModalButtonOne = $(".menu-close-certificate--one");
   var modalOverlayOne = $(".modal-certificate__overlay--one");
@@ -50,7 +107,9 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal-certificate__overlay--visible");
     modalDialog.removeClass("modal-certificate__dialog--visible");
   }
+  */
 // Модальное окно с сертификатами - two
+  /*
   var modalSertificateButtonTwo = $('[data-toggle=modal-certificate-two]');
   var closeModalButtonTwo = $(".menu-close-certificate--two");
   var modalOverlayTwo = $(".modal-certificate__overlay--two");
@@ -77,7 +136,9 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal-certificate__overlay--visible");
     modalDialog.removeClass("modal-certificate__dialog--visible");
   }
+  */
 // Модальное окно с сертификатами - three
+  /*
   var modalSertificateButtonThree = $('[data-toggle=modal-certificate-three]');
   var closeModalButtonThree = $(".menu-close-certificate--three");
   var modalOverlayThree = $(".modal-certificate__overlay--three");
@@ -93,7 +154,6 @@ $(document).ready(function () {
     closeModalButton.addClass("menu-close-certificate--visible");
     modalOverlay.addClass("modal-certificate__overlay--visible");
     modalDialog.addClass("modal-certificate__dialog--visible");
-    //modalDialog.scrollTop(0);
   }
   function closeModalSertificateThree(event) {
     event.preventDefault();
@@ -104,6 +164,8 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal-certificate__overlay--visible");
     modalDialog.removeClass("modal-certificate__dialog--visible");
   }
+  */
+  /*
 // Модальное окно со скриншотом Моя Слата - one
   var modalPortfolioButtonOne = $('[data-toggle=portfolio-screen-one]');
   var closeModalButtonPortfolioOne = $(".menu-close-portfolio--one");
@@ -260,7 +322,7 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal-portfolio__overlay--visible");
     modalDialog.removeClass("modal-portfolio__dialog--visible");
   }
-
+*/
 
 
   var btn = $('#button');
@@ -281,16 +343,12 @@ btn.on('click', function(e) {
   var certificatesSlider = new Swiper('.certificates-slider', {
     // Optional parameters
     loop: true,
-  
-    autoplay: {
-      delay: 5000,
-    },
     navigation: {
       prevEl: '.certificates-buttons__left',
       nextEl: '.certificates-buttons__right',
     },
   });
-  var certificatesSlider = new Swiper('.portfolio-slider', {
+  var portfolioSlider = new Swiper('.portfolio-slider', {
     // Optional parameters
     loop: true,
   
@@ -359,6 +417,7 @@ btn.on('click', function(e) {
     $(document).keyup(function (e) {
     if (e.keyCode === 27) {
       closeModal(e);
+      closeModalSertificate(e);
       closeModalSertificateOne(e);
       closeModalSertificateTwo(e);
       closeModalSertificateThree(e);

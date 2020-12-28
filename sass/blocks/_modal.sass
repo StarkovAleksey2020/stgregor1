@@ -19,10 +19,7 @@
       position: fixed
       top: 50%
       left: 50%
-      max-width: 478px
-      padding: 33px 88px
       transform: translate(-50%, -50%)
-      background-color: $secondary
       color: $background-color
       border-radius: 8px
       z-index: 101
@@ -30,12 +27,16 @@
       opacity: 0
       transition: opacity 0.2s
       &--visible
-        min-width: 50%
+        min-width: 100%
+        min-height: auto
         position: fixed
-        top: 20%
+        top: 9%
         visibility: visible
         opacity: 1
         z-index: 101
+        display: flex
+        justify-content: center
+        align-items: baseline
   &__close
     position: absolute
     top: 17px
@@ -68,10 +69,7 @@
       position: fixed
       top: 50%
       left: 50%
-      max-width: 478px
-      padding: 33px 88px
       transform: translate(-50%, -50%)
-      background-color: $secondary
       color: $background-color
       border-radius: 8px
       z-index: 101
@@ -79,12 +77,16 @@
       opacity: 0
       transition: opacity 0.2s
       &--visible
-        min-width: 25%
+        min-width: 100%
+        min-height: auto
         position: fixed
-        top: 10%
+        top: 9%
         visibility: visible
         opacity: 1
         z-index: 101
+        display: flex
+        justify-content: center
+        align-items: baseline
 .menu
   &-close
     position: absolute
@@ -124,7 +126,7 @@
       padding: 5px
       flex-direction: column
       border: none
-      background-color: #fff
+      background-color: inherit
       cursor: pointer
       outline: none
       &--visible
@@ -147,7 +149,7 @@
       padding: 5px
       flex-direction: column
       border: none
-      background-color: #fff
+      background-color: inherit
       cursor: pointer
       outline: none
       &--visible

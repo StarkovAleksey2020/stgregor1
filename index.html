@@ -246,19 +246,19 @@
             src="img/sert-1.jpg"
             alt="sertificate one"
             class="training-certificate training-certificate--1"
-            data-toggle="modal-certificate-one"
+            data-toggle="modal-certificate"
           />
           <img
             src="img/sert-2.jpg"
             alt="sertificate two"
             class="training-certificate training-certificate--2"
-            data-toggle="modal-certificate-two"
+            data-toggle="modal-certificate"
           />
           <img
             src="img/sert-3.jpg"
             alt="sertificate three"
             class="training-certificate training-certificate--3"
-            data-toggle="modal-certificate-three"
+            data-toggle="modal-certificate"
           />
         </div>
         <!-- /.training-certificates -->
@@ -268,62 +268,61 @@
     <!-- /.training -->
 
     <div class="modal-certificate">
-      <div
-        class="modal-certificate__overlay modal-certificate__overlay--one"
-      ></div>
+      <div class="modal-certificate__overlay"></div>
       <!-- /.modal__overlay -->
-      <div class="modal-certificate__dialog modal-certificate__dialog--one">
-        <button class="menu-close-certificate menu-close-certificate--one">
+      <div class="modal-certificate__dialog">
+        <button class="menu-close-certificate">
           <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
         </button>
-        <img
-          src="img/sert-1.jpg"
-          alt="sertificate one"
-          class="training-certificate training-certificate__modal"
-          data-toggle="modal-certificate"
-        />
+        <div class="certificates-buttons-block">
+          <a href="#" class="certificates-buttons certificates-buttons__left">
+            <svg
+              class="certificates-buttons__image certificates-buttons__image--left"
+            >
+              <use xlink:href="img/icons.svg#arrow-prev"></use>
+            </svg>
+          </a>
+          <a href="#" class="certificates-buttons certificates-buttons__right">
+            <svg
+              class="certificates-buttons__image certificates-buttons__image--right"
+            >
+              <use xlink:href="img/icons.svg#arrow-next"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.certificates-buttons-block -->
+
+        <div class="swiper-container certificates-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="img/sert-1.jpg"
+                alt="sertificate one"
+                class="training-certificate training-certificate__modal"
+                data-toggle="modal-certificate"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/sert-2.jpg"
+                alt="sertificate two"
+                class="training-certificate training-certificate__modal"
+                data-toggle="modal-certificate"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/sert-3.jpg"
+                alt="sertificate two"
+                class="training-certificate training-certificate__modal"
+                data-toggle="modal-certificate"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /.modal-certificate__dialog -->
     </div>
-    <!-- /.modal-certificate -->
-    <div class="modal-certificate">
-      <div
-        class="modal-certificate__overlay modal-certificate__overlay--two"
-      ></div>
-      <!-- /.modal__overlay -->
-      <div class="modal-certificate__dialog modal-certificate__dialog--two">
-        <button class="menu-close-certificate menu-close-certificate--two">
-          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
-        </button>
-        <img
-          src="img/sert-2.jpg"
-          alt="sertificate two"
-          class="training-certificate training-certificate__modal"
-          data-toggle="modal-certificate"
-        />
-      </div>
-      <!-- /.modal-certificate__dialog -->
-    </div>
-    <!-- /.modal-certificate -->
-    <div class="modal-certificate">
-      <div
-        class="modal-certificate__overlay modal-certificate__overlay--three"
-      ></div>
-      <!-- /.modal__overlay -->
-      <div class="modal-certificate__dialog modal-certificate__dialog--three">
-        <button class="menu-close-certificate menu-close-certificate--three">
-          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
-        </button>
-        <img
-          src="img/sert-3.jpg"
-          alt="sertificate three"
-          class="training-certificate training-certificate__modal"
-          data-toggle="modal-certificate"
-        />
-      </div>
-      <!-- /.modal-certificate__dialog -->
-    </div>
-    <!-- /.modal-certificate -->
     <section id="works" class="works">
       <div class="container container-works">
         <div class="works-wrapper">
@@ -404,19 +403,19 @@
                 src="img/my-slata-1.jpg"
                 alt="screen one"
                 class="portfolio-screen"
-                data-toggle="portfolio-screen-one"
+                data-toggle="modal-portfolio"
               />
               <img
                 src="img/my-slata-2.jpg"
                 alt="sertificate two"
                 class="portfolio-screen"
-                data-toggle="portfolio-screen-two"
+                data-toggle="modal-portfolio"
               />
               <img
                 src="img/my-slata-3.jpg"
                 alt="sertificate three"
                 class="portfolio-screen"
-                data-toggle="portfolio-screen-three"
+                data-toggle="modal-portfolio"
               />
             </div>
             <!-- /.portfolio-screenshots__left -->
@@ -425,196 +424,102 @@
                 src="img/my-slata-4.jpg"
                 alt="sertificate three"
                 class="portfolio-screen"
-                data-toggle="portfolio-screen-four"
+                data-toggle="modal-portfolio"
               />
               <img
                 src="img/my-slata-5.jpg"
                 alt="sertificate three"
                 class="portfolio-screen"
-                data-toggle="portfolio-screen-five"
+                data-toggle="modal-portfolio"
               />
               <img
                 src="img/my-slata-6.jpg"
                 alt="sertificate three"
                 class="portfolio-screen"
-                data-toggle="portfolio-screen-six"
+                data-toggle="modal-portfolio"
               />
             </div>
-            <!-- /.portfolio-screenshots__right -->
-            <!--
-            <div class="portfolio-slider">
-              <a href="#" class="portfolio-buttons portfolio-buttons__left">
-                <svg
-                  class="portfolio-buttons__image portfolio-buttons__image--left"
-                >
-                  <use xlink:href="img/icons.svg#arrow-prev"></use>
-                </svg>
-              </a>
-              <div class="swiper-container portfolio-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide portfolio-slide">
-                    <img
-                      src="img/my-slata-1.jpg"
-                      alt="screen one"
-                      class="portfolio-screen"
-                    />
-                    <img
-                      src="img/my-slata-2.jpg"
-                      alt="sertificate two"
-                      class="portfolio-screen"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="img/my-slata-3.jpg"
-                      alt="sertificate three"
-                      class="portfolio-screen"
-                    />
-                    <img
-                      src="img/my-slata-4.jpg"
-                      alt="sertificate three"
-                      class="portfolio-screen"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="img/my-slata-5.jpg"
-                      alt="sertificate three"
-                      class="portfolio-screen"
-                    />
-                    <img
-                      src="img/my-slata-6.jpg"
-                      alt="sertificate three"
-                      class="portfolio-screen"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="portfolio-buttons portfolio-buttons__right">
-                <svg
-                  class="portfolio-buttons__image portfolio-buttons__image--right"
-                >
-                  <use xlink:href="img/icons.svg#arrow-next"></use>
-                </svg>
-              </a>
-            </div>
-            -->
-            <!-- /.portfolio-slider -->
           </div>
           <!-- /.portfolio-screenshots -->
         </div>
       </div>
     </section>
     <!-- /.portfolio -->
+
     <div class="modal-portfolio">
-      <div class="modal-portfolio__overlay modal-portfolio__overlay--one"></div>
+      <div class="modal-portfolio__overlay"></div>
       <!-- /.modal__overlay -->
-      <div class="modal-portfolio__dialog modal-portfolio__dialog--one">
-        <button class="menu-close-portfolio menu-close-portfolio--one">
+      <div class="modal-portfolio__dialog">
+        <button class="menu-close-portfolio">
           <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
         </button>
-        <img
-          src="img/my-slata-1.jpg"
-          alt="portfolio screen one"
-          class="portfolio-screen portfolio-screen__modal"
-          data-toggle="modal-portfolio"
-        />
+        <div class="portfolio-buttons-block">
+          <a href="#" class="portfolio-buttons portfolio-buttons__left">
+            <svg
+              class="portfolio-buttons__image portfolio-buttons__image--left"
+            >
+              <use xlink:href="img/icons.svg#arrow-prev"></use>
+            </svg>
+          </a>
+          <a href="#" class="portfolio-buttons portfolio-buttons__right">
+            <svg
+              class="portfolio-buttons__image portfolio-buttons__image--right"
+            >
+              <use xlink:href="img/icons.svg#arrow-next"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.certificates-buttons-block -->
+
+        <div class="swiper-container portfolio-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="img/my-slata-1.jpg"
+                alt="screen one"
+                class="portfolio-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/my-slata-2.jpg"
+                alt="sertificate two"
+                class="portfolio-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/my-slata-3.jpg"
+                alt="sertificate three"
+                class="portfolio-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/my-slata-4.jpg"
+                alt="sertificate three"
+                class="portfolio-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/my-slata-5.jpg"
+                alt="sertificate three"
+                class="portfolio-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/my-slata-6.jpg"
+                alt="sertificate three"
+                class="portfolio-screen-modal"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- /.modal-portfolio__dialog -->
+      <!-- /.modal-certificate__dialog -->
     </div>
-    <!-- /.modal-portfolio -->
-    <div class="modal-portfolio">
-      <div class="modal-portfolio__overlay modal-portfolio__overlay--two"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal-portfolio__dialog modal-portfolio__dialog--two">
-        <button class="menu-close-portfolio menu-close-portfolio--two">
-          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
-        </button>
-        <img
-          src="img/my-slata-2.jpg"
-          alt="portfolio screen two"
-          class="portfolio-screen portfolio-screen__modal"
-          data-toggle="modal-portfolio"
-        />
-      </div>
-      <!-- /.modal-portfolio__dialog -->
-    </div>
-    <!-- /.modal-portfolio -->
-    <div class="modal-portfolio">
-      <div
-        class="modal-portfolio__overlay modal-portfolio__overlay--three"
-      ></div>
-      <!-- /.modal__overlay -->
-      <div class="modal-portfolio__dialog modal-portfolio__dialog--three">
-        <button class="menu-close-portfolio menu-close-portfolio--three">
-          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
-        </button>
-        <img
-          src="img/my-slata-3.jpg"
-          alt="portfolio screen three"
-          class="portfolio-screen portfolio-screen__modal"
-          data-toggle="modal-portfolio"
-        />
-      </div>
-      <!-- /.modal-portfolio__dialog -->
-    </div>
-    <!-- /.modal-portfolio -->
-    <div class="modal-portfolio">
-      <div
-        class="modal-portfolio__overlay modal-portfolio__overlay--four"
-      ></div>
-      <!-- /.modal__overlay -->
-      <div class="modal-portfolio__dialog modal-portfolio__dialog--four">
-        <button class="menu-close-portfolio menu-close-portfolio--four">
-          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
-        </button>
-        <img
-          src="img/my-slata-4.jpg"
-          alt="portfolio screen four"
-          class="portfolio-screen portfolio-screen__modal"
-          data-toggle="modal-portfolio"
-        />
-      </div>
-      <!-- /.modal-portfolio__dialog -->
-    </div>
-    <!-- /.modal-portfolio -->
-    <div class="modal-portfolio">
-      <div
-        class="modal-portfolio__overlay modal-portfolio__overlay--five"
-      ></div>
-      <!-- /.modal__overlay -->
-      <div class="modal-portfolio__dialog modal-portfolio__dialog--five">
-        <button class="menu-close-portfolio menu-close-portfolio--five">
-          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
-        </button>
-        <img
-          src="img/my-slata-5.jpg"
-          alt="portfolio screen five"
-          class="portfolio-screen portfolio-screen__modal"
-          data-toggle="modal-portfolio"
-        />
-      </div>
-      <!-- /.modal-portfolio__dialog -->
-    </div>
-    <!-- /.modal-portfolio -->
-    <div class="modal-portfolio">
-      <div class="modal-portfolio__overlay modal-portfolio__overlay--six"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal-portfolio__dialog modal-portfolio__dialog--six">
-        <button class="menu-close-portfolio menu-close-portfolio--six">
-          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
-        </button>
-        <img
-          src="img/my-slata-6.jpg"
-          alt="portfolio screen six"
-          class="portfolio-screen portfolio-screen__modal"
-          data-toggle="modal-portfolio"
-        />
-      </div>
-      <!-- /.modal-portfolio__dialog -->
-    </div>
-    <!-- /.modal-portfolio -->
     <section id="footer" class="footer">
       <div class="container container-footer">
         <div class="footer-wrapper">

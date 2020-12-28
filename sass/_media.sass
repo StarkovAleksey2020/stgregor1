@@ -27,8 +27,14 @@
       width: 90%
     &-slider
       height: 400px
+    &-screen
+      width: 85%
   label.invalid
     font-size: 10px
+  .certificates
+    &-buttons
+      &-block
+        width: 98%
 @media (max-width: 768px)
   .container
     &-navbar
@@ -113,6 +119,9 @@
   .training
     &-wrapper
       width: 100%
+    &-certificate
+      &--1, &--2, &--3
+        width: 70%
   .works
     &-wrapper
       width: 100%
@@ -121,7 +130,7 @@
       width: 100%
     &-screen
       height: auto
-      width: 47%
+      width: 80%
   .footer
     &-contacts
       flex-basis: 32%
@@ -134,9 +143,36 @@
           margin-right: 0
     &__message
       flex-basis: 100%
+  .certificates
+    &-slider
+      width: 500px
+      min-height: 370px
+    &-buttons
+      &-block
+        top: 280px
+        width: 95%
+      &__image
+        &--right, &--left
+          width: 25px
+          height: 25px
 @media (max-width: 576px)
   .container
+  .certificates
+    &-slider
+      width: 400px
+      min-height: 300px
+    &-buttons
+      &-block
+        top: 250px
+      &__image
+        &--right, &--left
+          width: 18px
+          height: 18px
 @media (min-width: 320px) and (max-width: 450px)
   .container
+  .certificates
+    &-slider
+      width: 260px
+      min-height: 200px
 @media (max-width: 320px)
   .container

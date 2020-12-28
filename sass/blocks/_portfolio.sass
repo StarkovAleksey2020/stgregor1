@@ -39,13 +39,13 @@
     margin: 0
     cursor: pointer
   &-slider
+    width: 470px
+    min-height: 475px
+    position: absolute
+    margin: 120px auto
+    margin-right: auto
+    margin-right: auto
     display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    flex-basis: 80%
-    height: 531px
-    margin: 25px auto
   &-slide
     width: 100%
     height: 100%
@@ -77,6 +77,12 @@
     /*display: flex*/
     /*flex-basis: 8%*/
     /*justify-content: center*/
+    &-block
+      width: 80%
+      display: flex
+      justify-content: space-between
+      position: absolute
+      top: 320px
     &__image
       &--left, &--right
         width: 40px
@@ -84,7 +90,7 @@
         filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
         outline: none
     &__right, &__left
-      width: 50px
+      display: flex
       text-decoration: none
       &:focus
         outline: none
@@ -103,8 +109,8 @@
       /*flex-basis: 50%*/
       /*margin-right: 15px*/
     &__modal
-      width: 100%
-      height: auto
+      height: 100%
+      width: auto
       position: absolute
       top: 0
       bottom: 0
@@ -123,23 +129,3 @@
       flex-direction: column
       flex-basis: 45%
       align-items: center
-.swiper
-  &-container
-    width: 50%
-    margin: 0
-  &-pagination
-    bottom: 0
-    cursor: pointer
-    &-bullets
-      width: 47px
-      display: flex
-      justify-content: space-between
-    &-bullet
-      width: 5px
-      height: 5px
-      background-color: $text-color
-      &-active
-        background-color: $primary
-  &-slide
-    display: flex
-    justify-content: center
