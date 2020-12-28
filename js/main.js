@@ -104,6 +104,162 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal-certificate__overlay--visible");
     modalDialog.removeClass("modal-certificate__dialog--visible");
   }
+// Модальное окно со скриншотом Моя Слата - one
+  var modalPortfolioButtonOne = $('[data-toggle=portfolio-screen-one]');
+  var closeModalButtonPortfolioOne = $(".menu-close-portfolio--one");
+  var modalOverlayPortfolioOne = $(".modal-portfolio__overlay--one");
+
+  modalPortfolioButtonOne.on('click', openModalPortfolioOne);
+  closeModalButtonPortfolioOne.on('click', closeModalPortfolioOne);
+  modalOverlayPortfolioOne.on('click', closeModalPortfolioOne);
+
+  function openModalPortfolioOne() {
+    var modalOverlay = $(".modal-portfolio__overlay--one");
+    var modalDialog = $(".modal-portfolio__dialog--one");
+    var closeModalButton = $(".menu-close-portfolio--one");
+    closeModalButton.addClass("menu-close-portfolio--visible");
+    modalOverlay.addClass("modal-portfolio__overlay--visible");
+    modalDialog.addClass("modal-portfolio__dialog--visible");
+  }
+  function closeModalPortfolioOne(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-portfolio__overlay--one");
+    var modalDialog = $(".modal-portfolio__dialog--one");
+    var closeModalButton = $(".menu-close-portfolio--one");
+    closeModalButton.removeClass("menu-close-portfolio--visible");
+    modalOverlay.removeClass("modal-portfolio__overlay--visible");
+    modalDialog.removeClass("modal-portfolio__dialog--visible");
+  }
+// Модальное окно со скриншотом Моя Слата - two
+  var modalPortfolioButtonTwo = $('[data-toggle=portfolio-screen-two]');
+  var closeModalButtonPortfolioTwo = $(".menu-close-portfolio--two");
+  var modalOverlayPortfolioTwo = $(".modal-portfolio__overlay--two");
+
+  modalPortfolioButtonTwo.on('click', openModalPortfolioTwo);
+  closeModalButtonPortfolioTwo.on('click', closeModalPortfolioTwo);
+  modalOverlayPortfolioTwo.on('click', closeModalPortfolioTwo);
+
+  function openModalPortfolioTwo() {
+    var modalOverlay = $(".modal-portfolio__overlay--two");
+    var modalDialog = $(".modal-portfolio__dialog--two");
+    var closeModalButton = $(".menu-close-portfolio--two");
+    closeModalButton.addClass("menu-close-portfolio--visible");
+    modalOverlay.addClass("modal-portfolio__overlay--visible");
+    modalDialog.addClass("modal-portfolio__dialog--visible");
+  }
+  function closeModalPortfolioTwo(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-portfolio__overlay--two");
+    var modalDialog = $(".modal-portfolio__dialog--two");
+    var closeModalButton = $(".menu-close-portfolio--two");
+    closeModalButton.removeClass("menu-close-portfolio--visible");
+    modalOverlay.removeClass("modal-portfolio__overlay--visible");
+    modalDialog.removeClass("modal-portfolio__dialog--visible");
+  }
+// Модальное окно со скриншотом Моя Слата - three
+  var modalPortfolioButtonThree = $('[data-toggle=portfolio-screen-three]');
+  var closeModalButtonPortfolioThree = $(".menu-close-portfolio--three");
+  var modalOverlayPortfolioThree = $(".modal-portfolio__overlay--three");
+
+  modalPortfolioButtonThree.on('click', openModalPortfolioThree);
+  closeModalButtonPortfolioThree.on('click', closeModalPortfolioThree);
+  modalOverlayPortfolioThree.on('click', closeModalPortfolioThree);
+
+  function openModalPortfolioThree() {
+    var modalOverlay = $(".modal-portfolio__overlay--three");
+    var modalDialog = $(".modal-portfolio__dialog--three");
+    var closeModalButton = $(".menu-close-portfolio--three");
+    closeModalButton.addClass("menu-close-portfolio--visible");
+    modalOverlay.addClass("modal-portfolio__overlay--visible");
+    modalDialog.addClass("modal-portfolio__dialog--visible");
+  }
+  function closeModalPortfolioThree(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-portfolio__overlay--three");
+    var modalDialog = $(".modal-portfolio__dialog--three");
+    var closeModalButton = $(".menu-close-portfolio--three");
+    closeModalButton.removeClass("menu-close-portfolio--visible");
+    modalOverlay.removeClass("modal-portfolio__overlay--visible");
+    modalDialog.removeClass("modal-portfolio__dialog--visible");
+  }
+// Модальное окно со скриншотом Моя Слата - four
+  var modalPortfolioButtonFour = $('[data-toggle=portfolio-screen-four]');
+  var closeModalButtonPortfolioFour = $(".menu-close-portfolio--four");
+  var modalOverlayPortfolioFour = $(".modal-portfolio__overlay--four");
+
+  modalPortfolioButtonFour.on('click', openModalPortfolioFour);
+  closeModalButtonPortfolioFour.on('click', closeModalPortfolioFour);
+  modalOverlayPortfolioFour.on('click', closeModalPortfolioFour);
+
+  function openModalPortfolioFour() {
+    var modalOverlay = $(".modal-portfolio__overlay--four");
+    var modalDialog = $(".modal-portfolio__dialog--four");
+    var closeModalButton = $(".menu-close-portfolio--four");
+    closeModalButton.addClass("menu-close-portfolio--visible");
+    modalOverlay.addClass("modal-portfolio__overlay--visible");
+    modalDialog.addClass("modal-portfolio__dialog--visible");
+  }
+  function closeModalPortfolioFour(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-portfolio__overlay--four");
+    var modalDialog = $(".modal-portfolio__dialog--four");
+    var closeModalButton = $(".menu-close-portfolio--four");
+    closeModalButton.removeClass("menu-close-portfolio--visible");
+    modalOverlay.removeClass("modal-portfolio__overlay--visible");
+    modalDialog.removeClass("modal-portfolio__dialog--visible");
+  }
+// Модальное окно со скриншотом Моя Слата - five
+  var modalPortfolioButtonFive = $('[data-toggle=portfolio-screen-five]');
+  var closeModalButtonPortfolioFive = $(".menu-close-portfolio--five");
+  var modalOverlayPortfolioFive = $(".modal-portfolio__overlay--five");
+
+  modalPortfolioButtonFive.on('click', openModalPortfolioFive);
+  closeModalButtonPortfolioFive.on('click', closeModalPortfolioFive);
+  modalOverlayPortfolioFive.on('click', closeModalPortfolioFive);
+
+  function openModalPortfolioFive() {
+    var modalOverlay = $(".modal-portfolio__overlay--five");
+    var modalDialog = $(".modal-portfolio__dialog--five");
+    var closeModalButton = $(".menu-close-portfolio--five");
+    closeModalButton.addClass("menu-close-portfolio--visible");
+    modalOverlay.addClass("modal-portfolio__overlay--visible");
+    modalDialog.addClass("modal-portfolio__dialog--visible");
+  }
+  function closeModalPortfolioFive(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-portfolio__overlay--five");
+    var modalDialog = $(".modal-portfolio__dialog--five");
+    var closeModalButton = $(".menu-close-portfolio--five");
+    closeModalButton.removeClass("menu-close-portfolio--visible");
+    modalOverlay.removeClass("modal-portfolio__overlay--visible");
+    modalDialog.removeClass("modal-portfolio__dialog--visible");
+  }
+// Модальное окно со скриншотом Моя Слата - six
+  var modalPortfolioButtonSix = $('[data-toggle=portfolio-screen-six]');
+  var closeModalButtonPortfolioSix = $(".menu-close-portfolio--six");
+  var modalOverlayPortfolioSix = $(".modal-portfolio__overlay--six");
+
+  modalPortfolioButtonSix.on('click', openModalPortfolioSix);
+  closeModalButtonPortfolioSix.on('click', closeModalPortfolioSix);
+  modalOverlayPortfolioSix.on('click', closeModalPortfolioSix);
+
+  function openModalPortfolioSix() {
+    var modalOverlay = $(".modal-portfolio__overlay--six");
+    var modalDialog = $(".modal-portfolio__dialog--six");
+    var closeModalButton = $(".menu-close-portfolio--six");
+    closeModalButton.addClass("menu-close-portfolio--visible");
+    modalOverlay.addClass("modal-portfolio__overlay--visible");
+    modalDialog.addClass("modal-portfolio__dialog--visible");
+  }
+  function closeModalPortfolioSix(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-portfolio__overlay--six");
+    var modalDialog = $(".modal-portfolio__dialog--six");
+    var closeModalButton = $(".menu-close-portfolio--six");
+    closeModalButton.removeClass("menu-close-portfolio--visible");
+    modalOverlay.removeClass("modal-portfolio__overlay--visible");
+    modalDialog.removeClass("modal-portfolio__dialog--visible");
+  }
 
 
 
@@ -203,6 +359,15 @@ btn.on('click', function(e) {
     $(document).keyup(function (e) {
     if (e.keyCode === 27) {
       closeModal(e);
+      closeModalSertificateOne(e);
+      closeModalSertificateTwo(e);
+      closeModalSertificateThree(e);
+      closeModalPortfolioOne(e);
+      closeModalPortfolioTwo(e);
+      closeModalPortfolioThree(e);
+      closeModalPortfolioFour(e);
+      closeModalPortfolioFive(e);
+      closeModalPortfolioSix(e);
     }
   });
 

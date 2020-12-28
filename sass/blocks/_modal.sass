@@ -48,6 +48,43 @@
       outline: none
     &:focus
       outline: none
+  &-portfolio
+    &__overlay
+      position: fixed
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background-color: rgba(0, 143, 223, 0.39)
+      z-index: 100
+      visibility: hidden
+      opacity: 0
+      transition: opacity 0.2s
+      &--visible
+        visibility: visible
+        opacity: 1
+        z-index: 101
+    &__dialog
+      position: fixed
+      top: 50%
+      left: 50%
+      max-width: 478px
+      padding: 33px 88px
+      transform: translate(-50%, -50%)
+      background-color: $secondary
+      color: $background-color
+      border-radius: 8px
+      z-index: 101
+      visibility: hidden
+      opacity: 0
+      transition: opacity 0.2s
+      &--visible
+        min-width: 25%
+        position: fixed
+        top: 10%
+        visibility: visible
+        opacity: 1
+        z-index: 101
 .menu
   &-close
     position: absolute
@@ -73,6 +110,29 @@
       opacity: 1
       z-index: 102
     &-certificate
+      position: absolute
+      top: 17px
+      right: 18px
+      text-decoration: none
+      cursor: pointer
+      display: flex
+      width: 25px
+      height: 25px
+      border-radius: 50%
+      padding: 0
+      align-items: center
+      padding: 5px
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      outline: none
+      &--visible
+        display: flex
+        visibility: visible
+        opacity: 1
+        z-index: 102
+    &-portfolio
       position: absolute
       top: 17px
       right: 18px
