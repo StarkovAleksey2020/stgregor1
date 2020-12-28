@@ -246,19 +246,19 @@
             src="img/sert-1.jpg"
             alt="sertificate one"
             class="training-certificate training-certificate--1"
-            data-toggle="modal-certificate"
+            data-toggle="modal-certificate-one"
           />
           <img
             src="img/sert-2.jpg"
             alt="sertificate two"
             class="training-certificate training-certificate--2"
-            data-toggle="modal-certificate"
+            data-toggle="modal-certificate-two"
           />
           <img
             src="img/sert-3.jpg"
             alt="sertificate three"
             class="training-certificate training-certificate--3"
-            data-toggle="modal-certificate"
+            data-toggle="modal-certificate-three"
           />
         </div>
         <!-- /.training-certificates -->
@@ -268,10 +268,12 @@
     <!-- /.training -->
 
     <div class="modal-certificate">
-      <div class="modal-certificate__overlay"></div>
+      <div
+        class="modal-certificate__overlay modal-certificate__overlay--one"
+      ></div>
       <!-- /.modal__overlay -->
-      <div class="modal-certificate__dialog">
-        <button class="menu-close hiden">
+      <div class="modal-certificate__dialog modal-certificate__dialog--one">
+        <button class="menu-close-certificate menu-close-certificate--one">
           <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
         </button>
         <img
@@ -283,7 +285,45 @@
       </div>
       <!-- /.modal-certificate__dialog -->
     </div>
-    <!-- /.modal -->
+    <!-- /.modal-certificate -->
+    <div class="modal-certificate">
+      <div
+        class="modal-certificate__overlay modal-certificate__overlay--two"
+      ></div>
+      <!-- /.modal__overlay -->
+      <div class="modal-certificate__dialog modal-certificate__dialog--two">
+        <button class="menu-close-certificate menu-close-certificate--two">
+          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
+        </button>
+        <img
+          src="img/sert-2.jpg"
+          alt="sertificate two"
+          class="training-certificate training-certificate__modal"
+          data-toggle="modal-certificate"
+        />
+      </div>
+      <!-- /.modal-certificate__dialog -->
+    </div>
+    <!-- /.modal-certificate -->
+    <div class="modal-certificate">
+      <div
+        class="modal-certificate__overlay modal-certificate__overlay--three"
+      ></div>
+      <!-- /.modal__overlay -->
+      <div class="modal-certificate__dialog modal-certificate__dialog--three">
+        <button class="menu-close-certificate menu-close-certificate--three">
+          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
+        </button>
+        <img
+          src="img/sert-3.jpg"
+          alt="sertificate three"
+          class="training-certificate training-certificate__modal"
+          data-toggle="modal-certificate"
+        />
+      </div>
+      <!-- /.modal-certificate__dialog -->
+    </div>
+    <!-- /.modal-certificate -->
     <section id="works" class="works">
       <div class="container container-works">
         <div class="works-wrapper">

@@ -23,26 +23,84 @@ $(document).ready(function () {
     goTopButton.toggleClass("hiden");
   })
 
-// Модальное окно с сертификатами
-  var modalSertificateButton = $('[data-toggle=modal-certificate]');
-  var closeModalButton = $(".modal__close");
-  var modalOverlay = $(".modal-certificate__overlay");
-  modalSertificateButton.on('click', openModalSertificate);
-  closeModalButton.on('click', closeModalSertificate);
-  modalOverlay.on('click', closeModalSertificate);
+// Модальное окно с сертификатами - one
+  var modalSertificateButtonOne = $('[data-toggle=modal-certificate-one]');
+  var closeModalButtonOne = $(".menu-close-certificate--one");
+  var modalOverlayOne = $(".modal-certificate__overlay--one");
 
-  function openModalSertificate() {
-      console.log('!____');
-    var modalOverlay = $(".modal-certificate__overlay");
-    var modalDialog = $(".modal-certificate__dialog");
+  modalSertificateButtonOne.on('click', openModalSertificateOne);
+  closeModalButtonOne.on('click', closeModalSertificateOne);
+  modalOverlayOne.on('click', closeModalSertificateOne);
+
+  function openModalSertificateOne() {
+    var modalOverlay = $(".modal-certificate__overlay--one");
+    var modalDialog = $(".modal-certificate__dialog--one");
+    var closeModalButton = $(".menu-close-certificate--one");
+    closeModalButton.addClass("menu-close-certificate--visible");
     modalOverlay.addClass("modal-certificate__overlay--visible");
     modalDialog.addClass("modal-certificate__dialog--visible");
-    modalDialog.scrollTop(0);
+    //modalDialog.scrollTop(0);
   }
-  function closeModalSertificate(event) {
+  function closeModalSertificateOne(event) {
     event.preventDefault();
-    var modalOverlay = $(".modal-certificate__overlay");
-    var modalDialog = $(".modal-certificate__dialog");
+    var modalOverlay = $(".modal-certificate__overlay--one");
+    var modalDialog = $(".modal-certificate__dialog--one");
+    var closeModalButton = $(".menu-close-certificate--one");
+    closeModalButton.removeClass("menu-close-certificate--visible");
+    modalOverlay.removeClass("modal-certificate__overlay--visible");
+    modalDialog.removeClass("modal-certificate__dialog--visible");
+  }
+// Модальное окно с сертификатами - two
+  var modalSertificateButtonTwo = $('[data-toggle=modal-certificate-two]');
+  var closeModalButtonTwo = $(".menu-close-certificate--two");
+  var modalOverlayTwo = $(".modal-certificate__overlay--two");
+
+  modalSertificateButtonTwo.on('click', openModalSertificateTwo);
+  closeModalButtonTwo.on('click', closeModalSertificateTwo);
+  modalOverlayTwo.on('click', closeModalSertificateTwo);
+
+  function openModalSertificateTwo() {
+    var modalOverlay = $(".modal-certificate__overlay--two");
+    var modalDialog = $(".modal-certificate__dialog--two");
+    var closeModalButton = $(".menu-close-certificate--two");
+    closeModalButton.addClass("menu-close-certificate--visible");
+    modalOverlay.addClass("modal-certificate__overlay--visible");
+    modalDialog.addClass("modal-certificate__dialog--visible");
+    //modalDialog.scrollTop(0);
+  }
+  function closeModalSertificateTwo(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-certificate__overlay--two");
+    var modalDialog = $(".modal-certificate__dialog--two");
+    var closeModalButton = $(".menu-close-certificate--two");
+    closeModalButton.removeClass("menu-close-certificate--visible");
+    modalOverlay.removeClass("modal-certificate__overlay--visible");
+    modalDialog.removeClass("modal-certificate__dialog--visible");
+  }
+// Модальное окно с сертификатами - three
+  var modalSertificateButtonThree = $('[data-toggle=modal-certificate-three]');
+  var closeModalButtonThree = $(".menu-close-certificate--three");
+  var modalOverlayThree = $(".modal-certificate__overlay--three");
+
+  modalSertificateButtonThree.on('click', openModalSertificateThree);
+  closeModalButtonThree.on('click', closeModalSertificateThree);
+  modalOverlayThree.on('click', closeModalSertificateThree);
+
+  function openModalSertificateThree() {
+    var modalOverlay = $(".modal-certificate__overlay--three");
+    var modalDialog = $(".modal-certificate__dialog--three");
+    var closeModalButton = $(".menu-close-certificate--three");
+    closeModalButton.addClass("menu-close-certificate--visible");
+    modalOverlay.addClass("modal-certificate__overlay--visible");
+    modalDialog.addClass("modal-certificate__dialog--visible");
+    //modalDialog.scrollTop(0);
+  }
+  function closeModalSertificateThree(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-certificate__overlay--three");
+    var modalDialog = $(".modal-certificate__dialog--three");
+    var closeModalButton = $(".menu-close-certificate--three");
+    closeModalButton.removeClass("menu-close-certificate--visible");
     modalOverlay.removeClass("modal-certificate__overlay--visible");
     modalDialog.removeClass("modal-certificate__dialog--visible");
   }
