@@ -178,7 +178,7 @@
       line-height: 20px
     &-slider
       /*height: 500px*/
-      margin: 80px auto
+      margin: 0 auto
     &-buttons
       &-block
         width: 95%
@@ -235,9 +235,10 @@
     &-slider
       width: 500px
       min-height: 370px
+      height: auto
     &-buttons
       &-block
-        top: 280px
+        /*top: 280px*/
         width: 95%
       &__image
         &--right, &--left
@@ -264,8 +265,7 @@
   .portfolio
     &-slider
       height: 550px
-      margin: 60px auto
-
+      /*margin: 60px auto*/
   .footer
     &-block
       flex-direction: column
@@ -284,7 +284,7 @@
       min-height: 300px
     &-buttons
       &-block
-        top: 205px
+        top: 250px
         width: 98%
       &__image
         &--right, &--left
@@ -312,13 +312,48 @@
     &-title
       font-size: 30px
       line-height: 32px
+    &-slider
+      width: 270px
+      &-buttons
+        &-block
+          width: 98%
+    &-buttons
+      &__image
+        &--right, &--left
+          width: 20px
+          height: 20px
   .footer
     &-title
       font-size: 30px
       line-height: 32px
+  .swiper
+    &-slide
+      justify-content: flex-start
 @media (max-width: 320px)
   .container
   .certificates
     &-slider
       width: 260px
       min-height: 180px
+@media only screen and (max-device-height: 750px) and (orientation: landscape)
+  .certificates
+    &-slider
+      /*width: 80%*/
+      /*height: 300px*/
+      width: 350px
+      height: auto
+  .portfolio
+    &-slider
+      height: 300px
+      width: 300px
+    &-buttons
+      &__image
+        &--right, &--left
+          width: 20px
+          height: 20px
+  .modal
+    &-certificate
+      &__dialog
+        &--visible
+          min-width: 80%
+          min-height: 90%
