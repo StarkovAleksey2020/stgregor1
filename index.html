@@ -484,6 +484,51 @@
             </div>
           </div>
           <!-- /.portfolio-screenshots -->
+          <h2 class="portfolio-title">Мой проект на GitHub</h2>
+          <div class="portfolio-weather">
+            <div class="portfolio-weather-header">
+              <h3 class="portfolio-subtitle">«WeatherApp»</h3>
+              <a
+                href="https://github.com/SaintGregor/MyWeatherApp.git"
+                class="portfolio-weather__link"
+                target="_blank"
+                >https://github.com/SaintGregor/MyWeatherApp.git</a
+              >
+            </div>
+            <!-- /.portfolio-slata-header -->
+
+            <h3 class="portfolio-subtitle">Описание</h3>
+            <p class="portfolio-text">
+              Приложение предоставляет пользователю возможность получить
+              температуру по нужному городу, а также по текущей геопозиции.
+              Интерфейс имеет темный и светлый режим. Интерфейс построен в
+              Interface Builder (Storyboard). Используемая архитектура MVC,
+              используется CoreLocation для работы с локацией и URLSession для
+              сетевых запросов. Сторонние библиотеки не используются.
+            </p>
+          </div>
+          <!-- /.portfoli-slata -->
+          <div class="portfolio-screenshots">
+            <div class="portfolio-screenshots__left">
+              <img
+                src="img/weather-1.jpg"
+                alt="screen one"
+                class="portfolio-screen"
+                data-toggle="modal-portfolio-weather"
+              />
+            </div>
+            <!-- /.portfolio-screenshots__left -->
+            <div class="portfolio-screenshots__right">
+              <img
+                src="img/weather-2.jpg"
+                alt="sertificate two"
+                class="portfolio-screen"
+                data-toggle="modal-portfolio-weather"
+              />
+            </div>
+            <!-- /.portfolio-screenshots__left -->
+          </div>
+          <!-- /.portfolio-screenshots -->
         </div>
       </div>
     </section>
@@ -556,6 +601,48 @@
                 src="img/my-slata-6.jpg"
                 alt="sertificate three"
                 class="portfolio-screen-modal"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal-certificate__dialog -->
+    </div>
+    <div class="modal-weather">
+      <div class="modal-weather__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal-weather__dialog">
+        <button class="menu-close-weather">
+          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
+        </button>
+        <div class="weather-buttons-block">
+          <a href="#" class="weather-buttons weather-buttons__left">
+            <svg class="weather-buttons__image weather-buttons__image--left">
+              <use xlink:href="img/icons.svg#arrow-prev"></use>
+            </svg>
+          </a>
+          <a href="#" class="weather-buttons weather-buttons__right">
+            <svg class="weather-buttons__image weather-buttons__image--right">
+              <use xlink:href="img/icons.svg#arrow-next"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.certificates-buttons-block -->
+
+        <div class="swiper-container weather-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="img/weather-1.jpg"
+                alt="weather screen one"
+                class="weather-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/weather-2.jpg"
+                alt="weather screen two"
+                class="weather-screen-modal"
               />
             </div>
           </div>

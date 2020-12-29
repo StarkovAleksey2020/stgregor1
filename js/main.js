@@ -76,6 +76,32 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal-portfolio__overlay--visible");
     modalDialog.removeClass("modal-portfolio__dialog--visible");
   }
+// Модальное окно со слайдером с weather
+  var modalWeatherButton = $('[data-toggle=modal-portfolio-weather]');
+  var closeModalButtonWeather = $(".menu-close-weather");
+  var modalOverlayWeather = $(".modal-weather__overlay");
+
+  modalWeatherButton.on('click', openModalWeather);
+  closeModalButtonWeather.on('click', closeModalWeather);
+  modalOverlayWeather.on('click', closeModalWeather);
+
+  function openModalWeather() {
+    var modalOverlay = $(".modal-weather__overlay");
+    var modalDialog = $(".modal-weather__dialog");
+    var closeModalButton = $(".menu-close-weather");
+    closeModalButton.addClass("menu-close-weather--visible");
+    modalOverlay.addClass("modal-weather__overlay--visible");
+    modalDialog.addClass("modal-weather__dialog--visible");
+  }
+  function closeModalWeather(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-weather__overlay");
+    var modalDialog = $(".modal-weather__dialog");
+    var closeModalButton = $(".menu-close-weather");
+    closeModalButton.removeClass("menu-close-weather--visible");
+    modalOverlay.removeClass("modal-weather__overlay--visible");
+    modalDialog.removeClass("modal-weather__dialog--visible");
+  }
 
   var btn = $('#button');
 
@@ -107,6 +133,15 @@ btn.on('click', function(e) {
     navigation: {
       prevEl: '.portfolio-buttons__left',
       nextEl: '.portfolio-buttons__right',
+    },
+  });
+  var weatherSlider = new Swiper('.weather-slider', {
+    // Optional parameters
+    loop: true,
+  
+    navigation: {
+      prevEl: '.weather-buttons__left',
+      nextEl: '.weather-buttons__right',
     },
   });
 
@@ -171,6 +206,7 @@ btn.on('click', function(e) {
       closeModal(e);
       closeModalSertificate(e);
       closeModalPortfolio(e);
+      closeModalWeather(e);
     }
   });
 

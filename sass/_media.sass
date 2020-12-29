@@ -41,6 +41,25 @@
     &-buttons
       &-block
         width: 98%
+  .weather
+    &-wrapper
+      width: 90%
+    &-slider
+      height: 600px
+    &-screen
+      width: 85%
+      -webkit-transform: none
+      transform: none
+      opacity: 1
+      box-shadow: none
+      &:hover
+        -webkit-transform: none
+        transform: none
+        opacity: 1
+        box-shadow: none
+    &-buttons
+      &-block
+        width: 98%
   label.invalid
     font-size: 10px
   .certificates
@@ -202,7 +221,27 @@
       font-size: 14px
       line-height: 20px
     &-slider
-      /*height: 500px*/
+      margin: 0 auto
+    &-buttons
+      &-block
+        width: 95%
+      &__image
+        &--right, &--left
+          width: 25px
+          height: 25px
+  .weather
+    &-wrapper
+      width: 100%
+      flex-direction: column
+    &-screen
+      height: auto
+      width: 80%
+    &-title
+      font-size: 32px
+    &-text
+      font-size: 14px
+      line-height: 20px
+    &-slider
       margin: 0 auto
     &-buttons
       &-block
@@ -290,7 +329,9 @@
   .portfolio
     &-slider
       height: 550px
-      /*margin: 60px auto*/
+  .weather
+    &-slider
+      height: 550px
   .footer
     &-block
       flex-direction: column
@@ -404,6 +445,20 @@
         &--right, &--left
           width: 20px
           height: 20px
+  .weather
+    &-title
+      font-size: 30px
+      line-height: 32px
+    &-slider
+      width: 270px
+      &-buttons
+        &-block
+          width: 98%
+    &-buttons
+      &__image
+        &--right, &--left
+          width: 20px
+          height: 20px
   .footer
     &-title
       font-size: 30px
@@ -425,6 +480,15 @@
       width: 350px
       height: auto
   .portfolio
+    &-slider
+      height: 300px
+      width: 300px
+    &-buttons
+      &__image
+        &--right, &--left
+          width: 20px
+          height: 20px
+  .weather
     &-slider
       height: 300px
       width: 300px
