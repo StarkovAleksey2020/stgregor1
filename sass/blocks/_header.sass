@@ -1,4 +1,6 @@
 .header
+  &-thankyou
+    height: 100px
   &-logo
     width: 140px
     height: 40px
@@ -117,6 +119,7 @@
     &__bottom
       margin: 0
       padding: 0
+      min-width: 60%
     &__main
       display: flex
       list-style-type: none
@@ -129,7 +132,7 @@
       max-width: fit-content
       list-style-type: none
       &--bottom
-        margin: 0 0 16px 0
+        margin: 0 0 26px 0
     &__link
       font-family: Open Sans
       font-style: normal
@@ -184,3 +187,60 @@
     display: none
     &-image
       filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
+.thankyou
+  height: 350px
+  margin: 0 auto
+  &__text
+    &-block
+      width: 90%
+      min-height: 400px
+      display: flex
+      flex-wrap: wrap
+      margin: 0
+      padding: 0
+      align-items: flex-start
+      flex-direction: column
+      justify-content: center
+      &--upper, &--lower
+        display: none
+      &--thankyou
+        height: 350px
+        margin: 0 auto
+  &-title
+    font-style: normal
+    font-weight: normal
+    font-size: 50px
+    line-height: 38px
+    color: $title-color
+    margin: 0 0 25px 0
+  &-subtitle
+    font-style: normal
+    font-weight: 500
+    font-size: 26px
+    line-height: 38px
+    color: #063873
+    margin: 0
+  &-text
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 28px
+    color: $text-color
+  &-button
+    width: 285px
+    min-height: 50px
+    background-color: $primary
+    color: #ffffff
+    border-radius: 8px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 20px
+    display: flex
+    align-items: center
+    text-align: center
+    justify-content: center
+    outline: none
+    cursor: pointer
+    &:hover
+      background-color: #3982c6

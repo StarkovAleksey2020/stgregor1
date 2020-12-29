@@ -38,8 +38,8 @@ try {
     $mail->setFrom('starkovaleksey.test@gmail.com', 'Алексей Старков'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    //$mail->addAddress('islamov.tema@yandex.ru');
-    $mail->addAddress('stgregor1@icloud.com');
+    //$mail->addAddress('stgregor1@icloud.com');
+    $mail->addAddress('starkovaleksey2017@gmail.com');
 
 // Отправка сообщения
 $mail->isHTML(true);

@@ -26,52 +26,75 @@
     <!-- Back to top button -->
     <a id="button"></a>
     <header id="header" class="header">
-      <div class="container container-main">
+      <div class="container container-navbar container-navbar--thankyou">
         <div class="header-navbar">
           <a href="index.html" class="logo">
             <!--<img src="img/logo.svg" alt="Logo: mountains" class="header-logo" />-->
             <svg class="header-logo">
-              <use xlink:href="img/icons.svg#apple"></use>
+              <use xlink:href="img/icons.svg#apple-developer"></use>
             </svg>
           </a>
           <ul class="header-menu">
             <li class="header-menu__item">
-              <a href="#skills" class="header-menu__link">Я умею</a>
+              <a href="#footer" class="header-menu__link">Контакты</a>
             </li>
-            <li class="header-menu__item">
-              <a href="#training" class="header-menu__link">Где учился</a>
-            </li>
-            <li class="header-menu__item">Портфолио</li>
-            <li class="header-menu__item">Где работал</li>
-            <li class="header-menu__item">Контакты</li>
           </ul>
+          <button class="menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+          <button class="menu-close hiden">
+            <img
+              src="img/close.svg"
+              alt="Icon: close"
+              class="menu-close-image"
+            />
+          </button>
         </div>
         <!-- /.header-navbar -->
-        <div class="header-main">
-          <div class="header-main__text-block">
-            <h1 class="header-main-title">Спасибо !</h1>
-            <p class="header-main-subtitle">Ваше сообщение отправлено</p>
-            <p class="header-main-text">
+        <div class="navbar-bottom">
+          <div class="container-navbar container-navbar__bottom">
+            <ul class="navbar-menu navbar-menu__bottom">
+              <li class="navbar-menu__item navbar-menu__item--bottom">
+                <a
+                  href="#footer"
+                  class="navbar-menu__link navbar-menu__link--bottom"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <!-- /.navbar-menu -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.navbar-bottom -->
+      </div>
+    </header>
+    <section class="main">
+      <div class="container container-thankyou">
+        <div class="thankyou">
+          <div class="thankyou__text-block">
+            <h1 class="thankyou-title">Спасибо !</h1>
+            <p class="thankyou-subtitle">Ваше сообщение отправлено</p>
+            <p class="thankyou-text">
               Я свяжусь с Вами в самое ближайшее время
             </p>
             <button
-              class="header-main-button"
+              class="thankyou-button"
               onclick="location.href='index.html';"
             >
               Вернуться
             </button>
           </div>
           <!-- /.header-main__text-block -->
-          <img
-            src="img/582278557.jpeg"
-            alt="photo"
-            class="header-main__photo"
-          />
         </div>
         <!-- /.header-main -->
       </div>
       <!-- /.container -->
-    </header>
+    </section>
+    <!-- /.main -->
+
     <section class="footer">
       <div class="container container-footer">
         <div class="footer-wrapper">
