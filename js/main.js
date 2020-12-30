@@ -270,6 +270,30 @@ i18next.init({
                 trainingTextTraining0: '2019 - iOS Programmer (GeekBrains, iOS Application Developer) Duration - 4 months During the training, I mastered the basic tools of the Swift language. Upon completion of the training, he passed testing in accordance with the mastered course program.',
                 trainingTextTraining1: '2019 - iOS Application Development (Swiftbook, iOS Programmer). Duration - 6 months During the training in the video lessons, I mastered the basic tools of the Swift language, OOP, collection-based applications (tableView, collectionView), the UIKit framework, CALayer, CoreData & Realm databases, working with multithreading, using network requests & API, GIT, Firebase for push notifications, MVC architecture, MVVM, SOLID principles, and application development via TDD.',
                 trainingTextTraining2: '2020 - Course iOS 13 Apple development Bootcamp (Udemy, Angela Yu) Duration - December 2020 to present. The main content is to consolidate the previously studied material with an introduction to changes in mobile development technologies.',
+                workedTitle: 'Where i worked',
+                workedIt: '2020 - Slata, GC, Irkutsk www.slata.ru, retail. Engineer of support and software development department Development from scratch of the application "My Slata" in Swift with the subsequent release and support for updates.',
+                workedSubTitle: 'Period before IT',
+                workedText: '2013 - 2018 - Mobile TeleSystems (MTS), Irkutsk. www.mts.ru, telecommunications, communications. Sales Manager. Sale of home Internet and television services. Conducting trainings "cold selling", "customer orientation", "working with objection".',
+                portfolioBlockTitle: 'Portfolio',
+                projectTitleSlata: '«My Slata»',
+                projectSlataTask: 'A task',
+                projectSlataTaskText: 'To develop an informational mobile application for the Slata supermarket chain in the city of Irkutsk. The application should inform about the company\'s promotions, provide a list of stores on the map, form a shopping list, provide an opportunity to use discount coupons, scan the barcode of a product with the subsequent display of its value, and also allow the user to use an individual loyalty program.',
+                projectSlataTaskTerm: 'Term',
+                projectSlataTaskTermValue: '6 weeks',
+                projectSlataDescriptionTitle: 'Project Description',
+                projectSlataDescription: 'The application interface is built in accordance with the design layout developed by the Slata company. The application uses the API provided by the main backend of the company, and as part of the customer loyalty program, the API of Loymax Solutions was used. After the delivery of the main functionality of the application, tasks were set to create additional options, for example, to create a price reader with the ability to display the qrCode (containing the names of goods and the total price) for self-service checkouts. This functionality allows you to scan one qrCode instead of each barcode of the purchased goods, which saves time and allows you to go straight to payment and leave the store. The app has been validated against Apple Standards (HIG) and published on the AppStore.',
+                projectWeatherAppTitle: 'My project on GitHub',
+                projectWeatherAppSubTitle: 'Description',
+                projectWeatherAppText: 'The application provides the user with the ability to get the temperature for the desired city, as well as for the current location. The interface has a dark and light mode. The interface is built in Interface Builder (Storyboard). Used MVC architecture, used by CoreLocation for work with location and URLSession for network requests. No third party libraries are used.',
+                contactsTitle: 'Contacts for communication',
+                contactsReady: 'Currently open to job offers and ready to participate in projects on a full or part time basis. Remote work is preferable, but I am ready to consider the option of moving to another city.',
+                contactsWriteMe: 'Write me',
+                contactsName: 'Name *',
+                contactsPhone: 'Phone *',
+                contactsMessage: 'Message',
+                contactsSend: 'Send',
+                contactsObligatory: '* Obligatory field',
+
               },
             }
           },
@@ -303,7 +327,29 @@ i18next.init({
                 trainingTextTraining0: '2019 - Программист iOS (GeekBrains, Разработчик приложений на iOS).Продолжительность - 4 месяца За время обучения освоил базовые инструменты языка Swift. По окончании обучения прошел тестирование в соответствии с освоенной программой курса.',
                 trainingTextTraining1: '2019 - Разработка приложений на iOS (Swiftbook, Программист iOS). Продолжительность - 6 месяцев За время обучения на видеоуроках освоил базовые инструменты языка Swift, ООП, приложения на основе коллекций (tableView, collectionView), фреймворк UIKit, CALayer, базы данных CoreData & Realm, работа с многопоточностью, использование сетевых запросов & API, GIT, Firebase для отправки пуш уведомлений, архитектуры MVC, MVVM, принципы SOLID, а также разработка приложений через TDD.',
                 trainingTextTraining2: '2020 - Курс iOS 13 Apple development Bootcamp (Udemy, Angela Yu) Продолжительсность - с декабря 2020 по настоящее время. Основное содержание - закрепление изученного ранее материала с ознакомлением изменений в технологиях мобильной разработки.',
-
+                workedTitle: 'Где работал',
+                workedIt: '2020 - Слата, ГК, Иркутск www.slata.ru, розничная торговля. Инженер отдела сопровождения и разработки программного обеспечения. Разработка с нуля приложения «Моя Слата» на языке Swift споследующим релизом и поддержкой обновлений.',
+                workedSubTitle: 'Период до IT',
+                workedText: '2013 - 2018 - Мобильные ТелеСистемы (МТС), Иркутск. www.mts.ru, телекоммуникации, связь. Специалист по продажам.  Продажа услуг домашнего интернета и телевидения. Проведение тренингов «холодные продажи», «ориентация на клиента», «работа с возражением».',
+                portfolioBlockTitle: 'Портфолио',
+                projectTitleSlata: '«Моя Слата»',
+                projectSlataTask: 'Задача',
+                projectSlataTaskText: 'Разработать информационное мобильное приложение сети супермаркетов «Слата» в городе Иркутск. Приложение должно информировать об акциях компании, предоставлять список магазинов на карте, формировать список покупок, предоставлять возможность воспользоваться купонами на скидку, сканировать штрих-код товара с последующим выводом его стоимости, а также позволять пользователю воспользоваться индивидуальной программой лояльности.',
+                projectSlataTaskTerm: 'Срок',
+                projectSlataTaskTermValue: '6 недель',
+                projectSlataDescriptionTitle: 'Описание проекта',
+                projectSlataDescription: 'Интерфейс приложения построен в соответствии с дизайн-макетом, разработанным компанией «Слата». Приложение использует API предоставляемый основным бэкендом компании, а в рамках программы лояльности клиентов — использовался API компании Loymax Solutions. После сдачи основного функционала приложения были поставлены задачи по созданию дополнительных опций, например - создание считывателя цен с возможностю вывести qrCode (содержащий наименования товаров и общей цены) для касс самообслуживания. Данный функционал позволяет сканировать один qrCode вместо каждого штрихкода приобретаемых товаров, что экономит время и позволяет   сразу перейти к оплате и покинуть магазин. Приложение прошло проверку на соответствие стандартам Apple (HIG) и было опубликовано в AppStore.',
+                projectWeatherAppTitle: 'Мой проект на GitHub',
+                projectWeatherAppSubTitle: 'Описание',
+                projectWeatherAppText: 'Приложение предоставляет пользователю возможность получить температуру по нужному городу, а также по текущей геопозиции. Интерфейс имеет темный и светлый режим. Интерфейс построен в Interface Builder (Storyboard). Используемая архитектура MVC, используется CoreLocation для работы с локацией и URLSession для сетевых запросов. Сторонние библиотеки не используются.',
+                contactsTitle: 'Контакты для связи',
+                contactsReady: 'В настоящий момент открыт для предложений о работе.Готов участвовать в проектах на полный или частичный рабочий день. Удаленная работа предпочтительна, однако готов рассмотреть вариант с переездом в другой город.',
+                contactsWriteMe: 'Напишите мне',
+                contactsName: 'Имя *',
+                contactsPhone: 'Телефон *',
+                contactsMessage: 'Сообщение',
+                contactsSend: 'Отправить',
+                contactsObligatory: '* Обязательное поле',
               }
             }
           },
@@ -313,9 +359,19 @@ i18next.init({
         $('.bodyAll').localize();
 
     $('.lang-select').click(function () {
-      /*i18next.changeLanguage(this.innerHTML);*/
+    /*i18next.changeLanguage(this.innerHTML);*/
+      var langEn = $(".lang-en");
+      var langRu = $(".lang-ru");
+      if (this.type === 'ru') {
+        langRu.addClass("lang-select-image--pressed");
+        langEn.removeClass("lang-select-image--pressed");
+      }
+      if (this.type === 'en') {
+        langEn.addClass("lang-select-image--pressed");
+        langRu.removeClass("lang-select-image--pressed");
+      }
       i18next.changeLanguage(this.type);
-          $('.bodyAll').localize();
+        $('.bodyAll').localize();
         });
       });
 });

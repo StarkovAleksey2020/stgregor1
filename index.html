@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starkov Gregor</title>
+    <title>Starkov Georg</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
@@ -82,20 +82,23 @@
               class="menu-close-image"
             />
           </button>
-          <a href="#" class="lang-select" type="en">
-            <img
-              src="img/united-states.svg"
-              alt="Icon: close"
-              class="lang-select-image"
-            />
-          </a>
-          <a href="#" class="lang-select" type="ru">
-            <img
-              src="img/russia.svg"
-              alt="Icon: close"
-              class="lang-select-image"
-            />
-          </a>
+          <div class="lang-block">
+            <a href="#" class="lang-select" type="en">
+              <img
+                src="img/united-states.svg"
+                alt="Icon: close"
+                class="lang-select-image lang-en"
+              />
+            </a>
+            <a href="#" class="lang-select" type="ru">
+              <img
+                src="img/russia.svg"
+                alt="Icon: close"
+                class="lang-select-image lang-ru lang-select-image--pressed"
+              />
+            </a>
+          </div>
+          <!-- /.lang-block -->
         </div>
         <!-- /.header-navbar -->
         <div class="navbar-bottom">
@@ -135,6 +138,25 @@
                   class="navbar-menu__link navbar-menu__link--bottom"
                   data-i18n="bodyAll.menuItemContacts"
                 ></a>
+              </li>
+              <li class="navbar-menu__item navbar-menu__item--bottom">
+                <div class="lang-block-bottom">
+                  <a href="#" class="lang-select" type="en">
+                    <img
+                      src="img/united-states.svg"
+                      alt="Icon: close"
+                      class="lang-select-image lang-en"
+                    />
+                  </a>
+                  <a href="#" class="lang-select" type="ru">
+                    <img
+                      src="img/russia.svg"
+                      alt="Icon: close"
+                      class="lang-select-image lang-ru lang-select-image--pressed"
+                    />
+                  </a>
+                </div>
+                <!-- /.lang-block -->
               </li>
             </ul>
             <!-- /.navbar-menu -->
@@ -361,25 +383,10 @@
     <section id="works" class="works">
       <div class="container container-works">
         <div class="works-wrapper">
-          <h2 class="works-title">Где работал</h2>
-          <p class="works-text">
-            2020 - <strong>Слата, ГК</strong>, Иркутск www.slata.ru, розничная
-            торговля.<br />
-            <strong
-              >Инженер отдела сопровождения и разработки программного
-              обеспечения
-            </strong>
-            Разработка с нуля приложения «Моя Слата» на языке Swift с
-            последующим релизом и поддержкой обновлений.
-          </p>
-          <h3 class="works-subtitle">Период до IT</h3>
-          <p class="works-text">
-            2013 - 2018 - <strong>Мобильные ТелеСистемы (МТС)</strong>, Иркутск.
-            www.mts.ru, телекоммуникации, связь.<br />
-            <strong>Специалист по продажам</strong>. Продажа услуг домашнего
-            интернета и телевидения. Проведение тренингов «холодные продажи»,
-            «ориентация на клиента», «работа с возражением».
-          </p>
+          <h2 class="works-title" data-i18n="bodyAll.workedTitle"></h2>
+          <p class="works-text" data-i18n="bodyAll.workedIt"></p>
+          <h3 class="works-subtitle" data-i18n="bodyAll.workedSubTitle"></h3>
+          <p class="works-text" data-i18n="bodyAll.workedText"></p>
         </div>
       </div>
       <!--/.container-works-->
@@ -387,11 +394,17 @@
     <!-- /.works -->
     <section id="portfolio" class="portfolio">
       <div class="container container-portfolio">
-        <h2 class="portfolio-title">Опубликованный проект</h2>
+        <h2
+          class="portfolio-title"
+          data-i18n="bodyAll.portfolioBlockTitle"
+        ></h2>
         <div class="portfolio-wrapper">
           <div class="portfolio-slata">
             <div class="portfolio-slata-header">
-              <h3 class="portfolio-subtitle">«Моя Слата»</h3>
+              <h3
+                class="portfolio-subtitle"
+                data-i18n="bodyAll.projectTitleSlata"
+              ></h3>
               <a
                 href="https://apps.apple.com/ru/app/моя-слата/id1468444683"
                 class="portfolio-slata__link"
@@ -401,35 +414,30 @@
             </div>
             <!-- /.portfolio-slata-header -->
 
-            <h3 class="portfolio-subtitle">Задача</h3>
-            <p class="portfolio-text">
-              Разработать информационное мобильное приложение сети супермаркетов
-              «Слата» в городе Иркутск. Приложение должно информировать об
-              акциях компании, предоставлять список магазинов на карте,
-              формировать список покупок, предоставлять возможность
-              воспользоваться купонами на скидку, сканировать штрих-код товара с
-              последующим выводом его стоимости, а также позволять пользователю
-              воспользоваться индивидуальной программой лояльности.
-            </p>
-            <h3 class="portfolio-subtitle">Срок</h3>
-            <p class="portfolio-text">6 недель</p>
-            <h3 class="portfolio-subtitle">Описание проекта</h3>
-            <p class="portfolio-text">
-              Интерфейс приложения построен в соответствии с дизайн-макетом,
-              разработанным компанией «Слата». Приложение использует API
-              предоставляемый основным бэкендом компании, а в рамках программы
-              лояльности клиентов — использовался API компании Loymax
-              Solutions.<br />
-              После сдачи основного функционала приложения были поставлены
-              задачи по созданию дополнительных опций, например - создание
-              считывателя цен с возможностю вывести qrCode (содержащий
-              наименования товаров и общей цены) для касс самообслуживания.
-              Данный функционал позволяет сканировать один qrCode вместо каждого
-              штрихкода приобретаемых товаров, что экономит время и позволяет
-              сразу перейти к оплате и покинуть магазин.<br />
-              Приложение прошло проверку на соответствие стандартам Apple (HIG)
-              и было опубликовано в AppStore.
-            </p>
+            <h3
+              class="portfolio-subtitle"
+              data-i18n="bodyAll.projectSlataTask"
+            ></h3>
+            <p
+              class="portfolio-text"
+              data-i18n="bodyAll.projectSlataTaskText"
+            ></p>
+            <h3
+              class="portfolio-subtitle"
+              data-i18n="bodyAll.projectSlataTaskTerm"
+            ></h3>
+            <p
+              class="portfolio-text"
+              data-i18n="bodyAll.projectSlataTaskTermValue"
+            ></p>
+            <h3
+              class="portfolio-subtitle"
+              data-i18n="bodyAll.projectSlataDescriptionTitle"
+            ></h3>
+            <p
+              class="portfolio-text"
+              data-i18n="bodyAll.projectSlataDescription"
+            ></p>
           </div>
           <!-- /.portfoli-slata -->
           <div class="portfolio-screenshots">
@@ -476,7 +484,10 @@
             </div>
           </div>
           <!-- /.portfolio-screenshots -->
-          <h2 class="portfolio-title">Мой проект на GitHub</h2>
+          <h2
+            class="portfolio-title"
+            data-i18n="bodyAll.projectWeatherAppTitle"
+          ></h2>
           <div class="portfolio-weather">
             <div class="portfolio-weather-header">
               <h3 class="portfolio-subtitle">«WeatherApp»</h3>
@@ -489,15 +500,14 @@
             </div>
             <!-- /.portfolio-slata-header -->
 
-            <h3 class="portfolio-subtitle">Описание</h3>
-            <p class="portfolio-text">
-              Приложение предоставляет пользователю возможность получить
-              температуру по нужному городу, а также по текущей геопозиции.
-              Интерфейс имеет темный и светлый режим. Интерфейс построен в
-              Interface Builder (Storyboard). Используемая архитектура MVC,
-              используется CoreLocation для работы с локацией и URLSession для
-              сетевых запросов. Сторонние библиотеки не используются.
-            </p>
+            <h3
+              class="portfolio-subtitle"
+              data-i18n="bodyAll.projectWeatherAppSubTitle"
+            ></h3>
+            <p
+              class="portfolio-text"
+              data-i18n="bodyAll.projectWeatherAppText"
+            ></p>
           </div>
           <!-- /.portfoli-slata -->
           <div class="portfolio-screenshots">
@@ -645,13 +655,8 @@
     <section id="footer" class="footer">
       <div class="container container-footer">
         <div class="footer-wrapper">
-          <h2 class="footer-title">Контакты для связи</h2>
-          <p class="footer-text">
-            В настоящий момент открыт для предложений о работе.Готов участвовать
-            в проектах на полный или частичный рабочий день.<br />
-            Удаленная работа предпочтительна, однако готов рассмотреть вариант с
-            переездом в другой город.
-          </p>
+          <h2 class="footer-title" data-i18n="bodyAll.contactsTitle"></h2>
+          <p class="footer-text" data-i18n="bodyAll.contactsReady"></p>
           <div class="footer-block">
             <div class="footer-contacts">
               <div class="footer-contacts-phone">
@@ -709,16 +714,19 @@
             </div>
             <!-- /.footer-contacts -->
             <div class="footer-form">
-              <h3 class="footer-subtitle">Напишите мне</h3>
+              <h3
+                class="footer-subtitle"
+                data-i18n="bodyAll.contactsWriteMe"
+              ></h3>
               <form action="send.php" method="POST" class="form footer__form">
                 <div class="footer__input-group">
                   <input
                     type="text"
                     class="input footer__input"
-                    placeholder="Имя *"
                     name="name"
                     required
                     minlength="2"
+                    data-i18n="[placeholder]bodyAll.contactsName"
                   />
                 </div>
                 <!-- /.footer__input-group -->
@@ -727,8 +735,8 @@
                     id="target"
                     type="tel"
                     class="input footer__input phoneInput"
-                    placeholder="Телефон*"
                     name="phone"
+                    data-i18n="[placeholder]bodyAll.contactsPhone"
                   />
                 </div>
                 <!-- /.footer__input-group -->
@@ -736,13 +744,18 @@
                   cols="30"
                   rows="10"
                   class="message footer__message"
-                  placeholder="Сообщение"
                   name="message"
+                  data-i18n="[placeholder]bodyAll.contactsMessage"
                 ></textarea>
-                <button class="button footer__button" type="submit">
-                  Send
-                </button>
-                <span class="footer__info">* Обязательное поле</span>
+                <button
+                  class="button footer__button"
+                  type="submit"
+                  data-i18n="bodyAll.contactsSend"
+                ></button>
+                <span
+                  class="footer__info"
+                  data-i18n="bodyAll.contactsObligatory"
+                ></span>
               </form>
             </div>
             <!-- /.footer-form -->

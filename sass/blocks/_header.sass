@@ -14,7 +14,7 @@
     padding: 0
     align-items: center
   &-menu
-    width: 75%
+    width: 65%
     list-style-type: none
     display: flex
     justify-content: space-between
@@ -245,9 +245,15 @@
     &:hover
       background-color: #3982c6
 .lang
+  &-block
+    width: 5%
+    display: flex
+    justify-content: space-between
+    &-bottom
+      display: none
   &-select
-    width: 50px
-    height: 50px
+    width: 30px
+    height: 30px
     &-image
       border-radius: 50%
       -webkit-transform: scale(0.9)
@@ -269,4 +275,12 @@
         -webkit-transform: scale(1.0)
         -moz-transform: scale(1.0)
         -o-transform: scale(1.0)
+        opacity: 1
+      &--pressed
+        -webkit-transform: scale(0.8)
+        -moz-transform: scale(0.8)
+        -o-transform: scale(0.8)
+        box-shadow: none
+        -webkit-box-shadow: none
+        -moz-box-shadow: none
         opacity: 1
