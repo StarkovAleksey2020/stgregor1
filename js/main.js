@@ -236,4 +236,71 @@ btn.on('click', function(e) {
 // Маска номера телефона
   $(".phoneInput").mask("+7 (999) 999-99-99");
 
+// i18next
+i18next.init({
+        lng: 'ru',
+        resources: {
+          en: {
+            translation: {
+              bodyAll: {
+                menuItemICan: 'I can',
+                menuItemStudy: 'Study',
+                menuItemPortfolio: 'Portfolio',
+                menuItemJob: 'Job',
+                menuItemContacts: 'Contacts',
+                hello: 'Hello !',
+                helloTitle: 'I am Georgy Starkov, a developer of mobile applications for the iOS platform (iOS Developer)',
+                helloSubTitle: 'The page was created specifically for potential employers: here are my projects from the portfolio, a description of my skills and contact information',
+                viewPortfolio: 'View Portfolio',
+                development: 'Development',
+                developmentText: 'I have practical experience in developing applications in Swift from scratch with subsequent release and support for updates.',
+                design: 'Design',
+                designText: 'I use Storyboard and design the app to meet Apple\'s HIG standards, which allows the app to pass validation when published to the AppStore.',
+                apiText: 'I have practical skills in building applications using the backend (REST API)',
+                architecture: 'Architecture',
+                architectureText: 'Familiar with MVC, MVVM, SOLID, DRY, KISS, YAGNI principles.',
+                dateStorage: 'Data storage',
+                dataStorageText: 'I mostly prefer to use Realm and also familiar with CoreData, UserDefaults, NSCache, Keychain.',
+                technologies: 'Applied technologies',
+                technologiesText: 'UIKit, AutoLayout, MapKit, CoreLocation, CALayer, Firebase cloud messaging, CocoaPods, Alamofire, SDWebImage, Kingfisher, GCD, Unit & UI tests, TDD.',
+              },
+            }
+          },
+          ru: {
+            translation: {
+              bodyAll: {
+                menuItemICan: 'Я умею',
+                menuItemStudy: 'Где учился',
+                menuItemPortfolio: 'Портфолио',
+                menuItemJob: 'Где работал',
+                menuItemContacts: 'Контакты',
+                hello: 'Привет !',
+                helloTitle: 'Я - Георгий Старков, разработчик мобильных приложений для платформы iOS (iOS Developer)',
+                helloSubTitle: 'Страница создана специально для потенциальных работодателей: здесь имеются мои проекты из портфолио, описание моих навыков и контактные данные',
+                viewPortfolio: 'Смотреть портфолио',
+                development: 'Разработка',
+                developmentText: 'Имею практический опыт разработки с нуля приложения на языке Swift с последующим релизом и поддержкой обновлений.',
+                design: 'Проектирование',
+                designText: 'Использую Storyboard и проектирую приложение в соответствии со стандартами интерфейса компании Apple (HIG), что позволяет приложению успешно проходить проверку при публикации в AppStore.',
+                apiText: 'Имею практические навыки построения приложений с использованием бэкенда (REST API)',
+                architecture: 'Архитектура',
+                architectureText: 'Знаком с MVC, MVVM, принципами SOLID, DRY, KISS, YAGNI.',
+                dateStorage: 'Хранение данных',
+                dataStorageText: 'В основном предпочитаю использовать Realm, а также знаком с CoreData, UserDefaults, NSCache, Keychain.',
+                technologies: 'Применяемые технологии',
+                technologiesText: 'UIKit, AutoLayout, MapKit, CoreLocation, CALayer, Firebase cloud messaging, CocoaPods, Alamofire, SDWebImage, Kingfisher, GCD, Unit & UI tests, TDD.',
+
+              }
+            }
+          },
+        }
+      }, function(err, t) {
+        i18nextJquery.init(i18next, $);
+        $('.bodyAll').localize();
+
+        $('.lang-select').click(function() {
+          i18next.changeLanguage(this.innerHTML);
+          $('.bodyAll').localize();
+        });
+      });
 });
