@@ -263,6 +263,13 @@ i18next.init({
                 dataStorageText: 'I mostly prefer to use Realm and also familiar with CoreData, UserDefaults, NSCache, Keychain.',
                 technologies: 'Applied technologies',
                 technologiesText: 'UIKit, AutoLayout, MapKit, CoreLocation, CALayer, Firebase cloud messaging, CocoaPods, Alamofire, SDWebImage, Kingfisher, GCD, Unit & UI tests, TDD.',
+                trainingTitle: 'Where did I study',
+                trainingSubTitleOwn: 'On my own',
+                trainingTextOwn: 'I started by watching videos on YouTube - I followed the authors of practical examples. Then I wrote small applications, consulted in chats, used educational literature, checked my skills by testing.',
+                trainingSubTitleTraining: 'Courses',
+                trainingTextTraining0: '2019 - iOS Programmer (GeekBrains, iOS Application Developer) Duration - 4 months During the training, I mastered the basic tools of the Swift language. Upon completion of the training, he passed testing in accordance with the mastered course program.',
+                trainingTextTraining1: '2019 - iOS Application Development (Swiftbook, iOS Programmer). Duration - 6 months During the training in the video lessons, I mastered the basic tools of the Swift language, OOP, collection-based applications (tableView, collectionView), the UIKit framework, CALayer, CoreData & Realm databases, working with multithreading, using network requests & API, GIT, Firebase for push notifications, MVC architecture, MVVM, SOLID principles, and application development via TDD.',
+                trainingTextTraining2: '2020 - Course iOS 13 Apple development Bootcamp (Udemy, Angela Yu) Duration - December 2020 to present. The main content is to consolidate the previously studied material with an introduction to changes in mobile development technologies.',
               },
             }
           },
@@ -289,6 +296,13 @@ i18next.init({
                 dataStorageText: 'В основном предпочитаю использовать Realm, а также знаком с CoreData, UserDefaults, NSCache, Keychain.',
                 technologies: 'Применяемые технологии',
                 technologiesText: 'UIKit, AutoLayout, MapKit, CoreLocation, CALayer, Firebase cloud messaging, CocoaPods, Alamofire, SDWebImage, Kingfisher, GCD, Unit & UI tests, TDD.',
+                trainingTitle: 'Где учился',
+                trainingSubTitleOwn: 'Самостоятельно',
+                trainingTextOwn: 'Начинал с просмотра роликов на YouTube - повторял за авторами практических примеров. Далее - писал небольшие приложения, консультировался в чатах, использовал учебную литературу. Проверял полученные навыки тестированием.',
+                trainingSubTitleTraining: 'Курсы',
+                trainingTextTraining0: '2019 - Программист iOS (GeekBrains, Разработчик приложений на iOS).Продолжительность - 4 месяца За время обучения освоил базовые инструменты языка Swift. По окончании обучения прошел тестирование в соответствии с освоенной программой курса.',
+                trainingTextTraining1: '2019 - Разработка приложений на iOS (Swiftbook, Программист iOS). Продолжительность - 6 месяцев За время обучения на видеоуроках освоил базовые инструменты языка Swift, ООП, приложения на основе коллекций (tableView, collectionView), фреймворк UIKit, CALayer, базы данных CoreData & Realm, работа с многопоточностью, использование сетевых запросов & API, GIT, Firebase для отправки пуш уведомлений, архитектуры MVC, MVVM, принципы SOLID, а также разработка приложений через TDD.',
+                trainingTextTraining2: '2020 - Курс iOS 13 Apple development Bootcamp (Udemy, Angela Yu) Продолжительсность - с декабря 2020 по настоящее время. Основное содержание - закрепление изученного ранее материала с ознакомлением изменений в технологиях мобильной разработки.',
 
               }
             }
@@ -298,8 +312,9 @@ i18next.init({
         i18nextJquery.init(i18next, $);
         $('.bodyAll').localize();
 
-        $('.lang-select').click(function() {
-          i18next.changeLanguage(this.innerHTML);
+    $('.lang-select').click(function () {
+      /*i18next.changeLanguage(this.innerHTML);*/
+      i18next.changeLanguage(this.type);
           $('.bodyAll').localize();
         });
       });

@@ -29,7 +29,6 @@
       <div class="container container-navbar">
         <div class="header-navbar">
           <a href="index.html" class="logo">
-            <!--<img src="img/logo.svg" alt="Logo: mountains" class="header-logo" />-->
             <svg class="header-logo">
               <use xlink:href="img/icons.svg#apple-developer"></use>
             </svg>
@@ -83,8 +82,20 @@
               class="menu-close-image"
             />
           </button>
-          <a href="#" class="lang-select">en</a>
-          <a href="#" class="lang-select">ru</a>
+          <a href="#" class="lang-select" type="en">
+            <img
+              src="img/united-states.svg"
+              alt="Icon: close"
+              class="lang-select-image"
+            />
+          </a>
+          <a href="#" class="lang-select" type="ru">
+            <img
+              src="img/russia.svg"
+              alt="Icon: close"
+              class="lang-select-image"
+            />
+          </a>
         </div>
         <!-- /.header-navbar -->
         <div class="navbar-bottom">
@@ -159,17 +170,12 @@
             class="header-main__photo"
           />
           <div class="header-main__text-block header-main__text-block--lower">
-            <p class="header-main-text">
-              Страница создана специально для потенциальных работодателей: здесь
-              имеются мои проекты из портфолио, описание моих навыков и
-              контактные данные
-            </p>
+            <p class="header-main-text" data-i18n="bodyAll.helloSubTitle"></p>
             <button
               class="header-main-button"
               onclick="location.href='#portfolio'"
-            >
-              Смотреть портфолио
-            </button>
+              data-i18n="bodyAll.viewPortfolio"
+            ></button>
           </div>
           <!-- /.header-main__text-block -->
         </div>
@@ -181,35 +187,19 @@
     <section id="skills" class="skills">
       <div class="container container-skills">
         <div class="skills-wrapper">
-          <!--          <h2 class="skills-title">Я умею</h2> -->
           <h2 class="skills-title" data-i18n="bodyAll.menuItemICan"></h2>
-          <p class="skills-text">
-            Умею разрабатывать с нуля приложения на языке Swift с последующим
-            релизом и поддержкой обновлений. Имею практический опыт разработки,
-            публикации и поддержки приложений.
-          </p>
-          <h3 class="skills-subtitle">Apple (проектирование)</h3>
-          <p class="skills-text">
-            Приложение проектирую в соответствии со стандартами интерфейса
-            компании Apple (HIG), что позволяет приложению успешно проходить
-            проверку при публикации в AppStore.
-          </p>
-          <h3 class="skills-subtitle">Взаимодействие с API</h3>
-          <p class="skills-text">
-            Имею практические навыки построения приложений с использованием
-            бэкенда (API)
-          </p>
-          <h3 class="skills-subtitle">Применяемые технологии</h3>
-          <p class="skills-text">
-            Знаком с архитектурами MVC, MVVM, принципами SOLID, а также DRY,
-            KISS, YAGNI. Часть навыков реализована в опубликованных проектах,
-            часть (MVVM) - применяется в текущих стартапах.
-          </p>
-          <h3 class="skills-subtitle">Командная разработка</h3>
-          <p class="skills-text">
-            Имею опыт разработки в команде. Использую Git для хранения проектов
-            (уровень владения - создание, клонирование, коммит, пуш).
-          </p>
+          <h3 class="skills-subtitle" data-i18n="bodyAll.development"></h3>
+          <p class="skills-text" data-i18n="bodyAll.developmentText"></p>
+          <h3 class="skills-subtitle" data-i18n="bodyAll.design"></h3>
+          <p class="skills-text" data-i18n="bodyAll.designText"></p>
+          <h3 class="skills-subtitle">API</h3>
+          <p class="skills-text" data-i18n="bodyAll.apiText"></p>
+          <h3 class="skills-subtitle" data-i18n="bodyAll.architecture"></h3>
+          <p class="skills-text" data-i18n="bodyAll.architectureText"></p>
+          <h3 class="skills-subtitle" data-i18n="bodyAll.dateStorage"></h3>
+          <p class="skills-text" data-i18n="bodyAll.dataStorageText"></p>
+          <h3 class="skills-subtitle" data-i18n="bodyAll.technologies"></h3>
+          <p class="skills-text" data-i18n="bodyAll.technologiesText"></p>
         </div>
         <!-- /.skills-wrapper -->
       </div>
@@ -219,21 +209,20 @@
     <section id="training" class="training">
       <div class="container container-training">
         <div class="training-wrapper">
-          <h2 class="training-title">Где учился</h2>
-          <h3 class="training-subtitle">Самостоятельно</h3>
-          <p class="training-text">
-            Начинал с просмотра роликов на YouTube - повторял за авторами
-            практических примеров. Далее - писал небольшие приложения,
-            консультировался в чатах, использовал учебную литературу.Проверял
-            полученные навыки тестированием:
-          </p>
-          <h3 class="training-subtitle">Курсы</h3>
-          <p class="training-text">
-            2019 - <strong>Программист iOS</strong> (GeekBrains, Разработчик
-            приложений на iOS).Продолжительность - 4 месяца За время обучения
-            освоил базовые инструменты языка Swift. По окончании обучения прошел
-            тестирование в соответствии с освоенной программой курса.
-          </p>
+          <h2 class="training-title" data-i18n="bodyAll.trainingTitle"></h2>
+          <h3
+            class="training-subtitle"
+            data-i18n="bodyAll.trainingSubTitleOwn"
+          ></h3>
+          <p class="training-text" data-i18n="bodyAll.trainingTextOwn"></p>
+          <h3
+            class="training-subtitle"
+            data-i18n="bodyAll.trainingSubTitleTraining"
+          ></h3>
+          <p
+            class="training-text"
+            data-i18n="bodyAll.trainingTextTraining0"
+          ></p>
           <div class="training-slider certificates-buttons">
             <a href="#" class="certificates-buttons__left">
               <svg
@@ -277,23 +266,14 @@
             </a>
           </div>
           <!-- /.training-slider -->
-          <p class="training-text">
-            2019 - <strong>Разработка приложений на iOS</strong> (Swiftbook,
-            Программист iOS). Продолжительность - 6 месяцев За время обучения на
-            видеоуроках освоил базовые инструменты языка Swift, ООП, приложения
-            на основе коллекций (tableView, collectionView), фреймворк UIKit,
-            CALayer, базы данных CoreData & Realm, работа с многопоточностью,
-            использование сетевых запросов & API, GIT, Firebase для отправки пуш
-            уведомлений, архитектуры MVC, MVVM, принципы SOLID, а также
-            разработка приложений через TDD.
-          </p>
-          <p class="training-text">
-            2020 -
-            <strong>Курс iOS 13 Apple development Bootcamp</strong> (Udemy,
-            Angela Yu) Продолжительсность - с декабря 2020 по настоящее время.
-            Основное содержание - закрепление изученного ранее материала с
-            ознакомлением изменений в технологиях мобильной разработки.
-          </p>
+          <p
+            class="training-text"
+            data-i18n="bodyAll.trainingTextTraining1"
+          ></p>
+          <p
+            class="training-text"
+            data-i18n="bodyAll.trainingTextTraining2"
+          ></p>
         </div>
         <!-- /.training-wrapper -->
         <div class="training-certificates-block">
