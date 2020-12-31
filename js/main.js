@@ -373,5 +373,17 @@ i18next.init({
       i18next.changeLanguage(this.type);
         $('.bodyAll').localize();
         });
-      });
+});
+  
+  var tabsItem = $('.portfolio-header-menu__item');
+  var contentItem = $('.portfolio-cards');
+
+  tabsItem.on("click", function(event) {
+    var activeContent = $(this).attr("data-target");
+    tabsItem.removeClass("portfolio-header-menu__item--active");
+    contentItem.removeClass("portfolio-cards--visible");
+    $(activeContent).addClass("portfolio-cards--visible");
+    $(this).addClass("portfolio-header-menu__item--active");
+  });
+  
 });

@@ -323,7 +323,6 @@
       <!-- /.container -->
     </section>
     <!-- /.training -->
-
     <div class="modal-certificate">
       <div class="modal-certificate__overlay"></div>
       <!-- /.modal__overlay -->
@@ -398,13 +397,32 @@
           class="portfolio-title"
           data-i18n="bodyAll.portfolioBlockTitle"
         ></h2>
+        <div class="portfilio-header">
+          <ul class="portfolio-header-menu">
+            <li
+              class="portfolio-header-menu__item portfolio-header-menu__item--active"
+              data-target="#slata"
+              data-i18n="bodyAll.projectTitleSlata"
+            ></li>
+            <li class="portfolio-header-menu__item" data-target="#weather">
+              «WeatherApp»
+            </li>
+          </ul>
+        </div>
+        <!-- /.portfilio-header -->
+
         <div class="portfolio-wrapper">
-          <div class="portfolio-slata">
+          <div
+            class="portfolio-slata portfolio-cards portfolio-cards--visible"
+            id="slata"
+          >
             <div class="portfolio-slata-header">
+              <!--
               <h3
                 class="portfolio-subtitle"
                 data-i18n="bodyAll.projectTitleSlata"
               ></h3>
+              -->
               <a
                 href="https://apps.apple.com/ru/app/моя-слата/id1468444683"
                 class="portfolio-slata__link"
@@ -438,59 +456,62 @@
               class="portfolio-text"
               data-i18n="bodyAll.projectSlataDescription"
             ></p>
+
+            <div class="portfolio-screenshots">
+              <div class="portfolio-screenshots__left">
+                <img
+                  src="img/my-slata-1.jpg"
+                  alt="screen one"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio"
+                />
+                <img
+                  src="img/my-slata-2.jpg"
+                  alt="sertificate two"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio"
+                />
+                <img
+                  src="img/my-slata-3.jpg"
+                  alt="sertificate three"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio"
+                />
+              </div>
+              <!-- /.portfolio-screenshots__left -->
+              <div class="portfolio-screenshots__right">
+                <img
+                  src="img/my-slata-4.jpg"
+                  alt="sertificate three"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio"
+                />
+                <img
+                  src="img/my-slata-5.jpg"
+                  alt="sertificate three"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio"
+                />
+                <img
+                  src="img/my-slata-6.jpg"
+                  alt="sertificate three"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio"
+                />
+              </div>
+            </div>
+            <!-- /.portfolio-screenshots -->
           </div>
           <!-- /.portfoli-slata -->
-          <div class="portfolio-screenshots">
-            <div class="portfolio-screenshots__left">
-              <img
-                src="img/my-slata-1.jpg"
-                alt="screen one"
-                class="portfolio-screen"
-                data-toggle="modal-portfolio"
-              />
-              <img
-                src="img/my-slata-2.jpg"
-                alt="sertificate two"
-                class="portfolio-screen"
-                data-toggle="modal-portfolio"
-              />
-              <img
-                src="img/my-slata-3.jpg"
-                alt="sertificate three"
-                class="portfolio-screen"
-                data-toggle="modal-portfolio"
-              />
-            </div>
-            <!-- /.portfolio-screenshots__left -->
-            <div class="portfolio-screenshots__right">
-              <img
-                src="img/my-slata-4.jpg"
-                alt="sertificate three"
-                class="portfolio-screen"
-                data-toggle="modal-portfolio"
-              />
-              <img
-                src="img/my-slata-5.jpg"
-                alt="sertificate three"
-                class="portfolio-screen"
-                data-toggle="modal-portfolio"
-              />
-              <img
-                src="img/my-slata-6.jpg"
-                alt="sertificate three"
-                class="portfolio-screen"
-                data-toggle="modal-portfolio"
-              />
-            </div>
-          </div>
-          <!-- /.portfolio-screenshots -->
+          <!--
           <h2
             class="portfolio-title"
             data-i18n="bodyAll.projectWeatherAppTitle"
           ></h2>
-          <div class="portfolio-weather">
+          -->
+          <div class="portfolio-weather portfolio-cards" id="weather">
             <div class="portfolio-weather-header">
-              <h3 class="portfolio-subtitle">«WeatherApp»</h3>
+              <!--<h3 class="portfolio-subtitle">«WeatherApp»</h3>-->
               <a
                 href="https://github.com/SaintGregor/MyWeatherApp.git"
                 class="portfolio-weather__link"
@@ -508,29 +529,29 @@
               class="portfolio-text"
               data-i18n="bodyAll.projectWeatherAppText"
             ></p>
+            <div class="portfolio-screenshots">
+              <div class="portfolio-screenshots__left">
+                <img
+                  src="img/weather-1.jpg"
+                  alt="screen one"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio-weather"
+                />
+              </div>
+              <!-- /.portfolio-screenshots__left -->
+              <div class="portfolio-screenshots__right">
+                <img
+                  src="img/weather-2.jpg"
+                  alt="sertificate two"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio-weather"
+                />
+              </div>
+              <!-- /.portfolio-screenshots__left -->
+            </div>
+            <!-- /.portfolio-screenshots -->
           </div>
           <!-- /.portfoli-slata -->
-          <div class="portfolio-screenshots">
-            <div class="portfolio-screenshots__left">
-              <img
-                src="img/weather-1.jpg"
-                alt="screen one"
-                class="portfolio-screen"
-                data-toggle="modal-portfolio-weather"
-              />
-            </div>
-            <!-- /.portfolio-screenshots__left -->
-            <div class="portfolio-screenshots__right">
-              <img
-                src="img/weather-2.jpg"
-                alt="sertificate two"
-                class="portfolio-screen"
-                data-toggle="modal-portfolio-weather"
-              />
-            </div>
-            <!-- /.portfolio-screenshots__left -->
-          </div>
-          <!-- /.portfolio-screenshots -->
         </div>
       </div>
     </section>

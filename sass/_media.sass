@@ -32,11 +32,12 @@
     &-slider
       height: 600px
     &-screen
-      width: 85%
-      -webkit-transform: none
-      transform: none
-      opacity: 1
-      box-shadow: none
+      /*width: 85%*/
+      width: 100px
+      /*-webkit-transform: none*/
+      /*transform: none*/
+      /*opacity: 1*/
+      /*box-shadow: none*/
       &:hover
         -webkit-transform: none
         transform: none
@@ -213,12 +214,19 @@
       font-size: 14px
       line-height: 20px
   .portfolio
+    &-header
+      &-menu
+        &__item
+          font-size: 16px
+          &--active
+            font-size: 16px
+            font-weight: 600
     &-wrapper
       width: 100%
       flex-direction: column
     &-screen
       height: auto
-      width: 80%
+      /*width: 80%*/
     &-title
       font-size: 32px
     &-text
@@ -233,6 +241,12 @@
         &--right, &--left
           width: 25px
           height: 25px
+    &-slata
+      &__link
+        font-size: 16px
+    &-weather
+      &__link
+        font-size: 16px
   .weather
     &-wrapper
       width: 100%
@@ -336,8 +350,16 @@
       &__photo
         margin: 0 auto
   .portfolio
+    &-header
+      &-menu
+        &__item
+          width: 130px
     &-slider
       height: 550px
+    &-screen
+      width: 65px
+    &-screenshots
+      flex-wrap: wrap
   .weather
     &-slider
       height: 550px
