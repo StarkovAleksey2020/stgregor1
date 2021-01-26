@@ -407,6 +407,11 @@
             <li class="portfolio-header-menu__item" data-target="#weather">
               «WeatherApp»
             </li>
+            <li
+              class="portfolio-header-menu__item"
+              data-target="#backpack"
+              data-i18n="bodyAll.projectTitleBackpack"
+            ></li>
           </ul>
         </div>
         <!-- /.portfilio-header -->
@@ -417,12 +422,6 @@
             id="slata"
           >
             <div class="portfolio-slata-header">
-              <!--
-              <h3
-                class="portfolio-subtitle"
-                data-i18n="bodyAll.projectTitleSlata"
-              ></h3>
-              -->
               <a
                 href="https://apps.apple.com/ru/app/моя-слата/id1468444683"
                 class="portfolio-slata__link"
@@ -503,12 +502,6 @@
             <!-- /.portfolio-screenshots -->
           </div>
           <!-- /.portfoli-slata -->
-          <!--
-          <h2
-            class="portfolio-title"
-            data-i18n="bodyAll.projectWeatherAppTitle"
-          ></h2>
-          -->
           <div class="portfolio-weather portfolio-cards" id="weather">
             <div class="portfolio-weather-header">
               <!--<h3 class="portfolio-subtitle">«WeatherApp»</h3>-->
@@ -551,7 +544,72 @@
             </div>
             <!-- /.portfolio-screenshots -->
           </div>
-          <!-- /.portfoli-slata -->
+          <!-- /.portfoli-weather -->
+          <div class="portfolio-backpack portfolio-cards" id="backpack">
+            <div class="portfolio-backpack-header">
+              <!--
+              <a
+                href="https://github.com/SaintGregor/MyWeatherApp.git"
+                class="portfolio-weather__link"
+                target="_blank"
+                >https://github.com/SaintGregor/MyWeatherApp.git</a
+              >
+              -->
+            </div>
+            <!-- /.portfolio-backpack-header -->
+            <h3
+              class="portfolio-subtitle"
+              data-i18n="bodyAll.projectWeatherAppSubTitle"
+            ></h3>
+            <p
+              class="portfolio-text"
+              data-i18n="bodyAll.projectBackpackAppText0"
+            ></p>
+            <p
+              class="portfolio-text"
+              data-i18n="bodyAll.projectBackpackAppText1"
+            ></p>
+            <div class="portfolio-screenshots">
+              <div class="portfolio-screenshots__left">
+                <img
+                  src="img/backpack-1.jpg"
+                  alt="backpack screen one"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio-backpack"
+                />
+                <img
+                  src="img/backpack-2.jpg"
+                  alt="backpack screen two"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio-backpack"
+                />
+                <img
+                  src="img/backpack-3.jpg"
+                  alt="backpack screen three"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio-backpack"
+                />
+              </div>
+              <!-- /.portfolio-screenshots__left -->
+              <div class="portfolio-screenshots__right">
+                <img
+                  src="img/backpack-4.jpg"
+                  alt="backpack sertificate four"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio-backpack"
+                />
+                <img
+                  src="img/backpack-5.jpg"
+                  alt="backpack sertificate five"
+                  class="portfolio-screen"
+                  data-toggle="modal-portfolio-backpack"
+                />
+              </div>
+              <!-- /.portfolio-screenshots__right -->
+            </div>
+            <!-- /.portfolio-screenshots -->
+          </div>
+          <!-- /.portfoli-backpack -->
         </div>
       </div>
     </section>
@@ -666,6 +724,69 @@
                 src="img/weather-2.jpg"
                 alt="weather screen two"
                 class="weather-screen-modal"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal-certificate__dialog -->
+    </div>
+    <div class="modal-backpack">
+      <div class="modal-backpack__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal-backpack__dialog">
+        <button class="menu-close-backpack">
+          <img src="img/close.svg" alt="Icon: close" class="menu-close-image" />
+        </button>
+        <div class="backpack-buttons-block">
+          <a href="#" class="backpack-buttons backpack-buttons__left">
+            <svg class="backpack-buttons__image backpack-buttons__image--left">
+              <use xlink:href="img/icons.svg#arrow-prev"></use>
+            </svg>
+          </a>
+          <a href="#" class="backpack-buttons backpack-buttons__right">
+            <svg class="backpack-buttons__image backpack-buttons__image--right">
+              <use xlink:href="img/icons.svg#arrow-next"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.backpack-buttons-block -->
+
+        <div class="swiper-container backpack-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="img/backpack-1.jpg"
+                alt="backpack screen one"
+                class="backpack-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/backpack-2.jpg"
+                alt="backpack screen two"
+                class="backpack-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/backpack-3.jpg"
+                alt="backpack screen three"
+                class="backpack-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/backpack-4.jpg"
+                alt="backpack sertificate four"
+                class="backpack-screen-modal"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/backpack-5.jpg"
+                alt="backpack sertificate five"
+                class="backpack-screen-modal"
               />
             </div>
           </div>

@@ -123,6 +123,27 @@
         text-decoration: underline
     &-header
       margin-bottom: 20px
+  &-backpack
+    display: flex
+    flex-direction: column
+    flex-basis: 55%
+    justify-content: flex-start
+    align-items: flex-start
+    &__link
+      margin: 0
+      padding: 0
+      text-decoration: none
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 26px
+      color: $text-color
+      padding: 0
+      margin: 0 0 15px 0
+      &:hover
+        text-decoration: underline
+    &-header
+      margin-bottom: 20px
   &-buttons
     &-block
       width: 80%
@@ -193,6 +214,65 @@
     &--visible
       display: flex
 .weather
+  &-slider
+    width: 470px
+    height: 475px
+    position: absolute
+    margin: 0 auto
+    margin-right: auto
+    margin-right: auto
+    display: flex
+  &-buttons
+    &-block
+      width: 80%
+      display: flex
+      justify-content: space-between
+    &__image
+      &--left, &--right
+        width: 40px
+        height: 40px
+        filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
+        outline: none
+    &__right, &__left
+      display: flex
+      text-decoration: none
+      &:focus
+        outline: none
+        border: none
+  &-screen
+    width: 130px
+    height: auto
+    margin-bottom: 10px
+    cursor: pointer
+    -webkit-transform: scale(0.9)
+    -moz-transform: scale(0.9)
+    -o-transform: scale(0.9)
+    -webkit-transition-duration: 0.5s
+    -moz-transition-duration: 0.5s
+    -o-transition-duration: 0.5s
+    opacity: 0.7
+    &:hover
+      -webkit-transform: scale(1.0)
+      -moz-transform: scale(1.0)
+      -o-transform: scale(1.0)
+      box-shadow: 0px 0px 30px gray
+      -webkit-box-shadow: 0px 0px 30px gray
+      -moz-box-shadow: 0px 0px 30px gray
+      opacity: 1
+    &-modal
+      width: 100%
+      object-fit: contain
+    &__modal
+      height: 100%
+      width: auto
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      padding: 0
+      margin: 0
+.backpack
   &-slider
     width: 470px
     height: 475px

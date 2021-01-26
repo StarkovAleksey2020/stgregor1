@@ -102,6 +102,32 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal-weather__overlay--visible");
     modalDialog.removeClass("modal-weather__dialog--visible");
   }
+// Модальное окно со слайдером с backpack
+  var modalWeatherButton = $('[data-toggle=modal-portfolio-backpack]');
+  var closeModalButtonWeather = $(".menu-close-backpack");
+  var modalOverlayWeather = $(".modal-backpack__overlay");
+
+  modalWeatherButton.on('click', openModalBackpack);
+  closeModalButtonWeather.on('click', closeModalBackpack);
+  modalOverlayWeather.on('click', closeModalBackpack);
+
+  function openModalBackpack() {
+    var modalOverlay = $(".modal-backpack__overlay");
+    var modalDialog = $(".modal-backpack__dialog");
+    var closeModalButton = $(".menu-close-backpack");
+    closeModalButton.addClass("menu-close-backpack--visible");
+    modalOverlay.addClass("modal-backpack__overlay--visible");
+    modalDialog.addClass("modal-backpack__dialog--visible");
+  }
+  function closeModalBackpack(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-backpack__overlay");
+    var modalDialog = $(".modal-backpack__dialog");
+    var closeModalButton = $(".menu-close-backpack");
+    closeModalButton.removeClass("menu-close-backpack--visible");
+    modalOverlay.removeClass("modal-backpack__overlay--visible");
+    modalDialog.removeClass("modal-backpack__dialog--visible");
+  }
 
   var btn = $('#button');
 
@@ -142,6 +168,15 @@ btn.on('click', function(e) {
     navigation: {
       prevEl: '.weather-buttons__left',
       nextEl: '.weather-buttons__right',
+    },
+  });
+  var backpackSlider = new Swiper('.backpack-slider', {
+    // Optional parameters
+    loop: true,
+  
+    navigation: {
+      prevEl: '.backpack-buttons__left',
+      nextEl: '.backpack-buttons__right',
     },
   });
 
@@ -207,26 +242,18 @@ btn.on('click', function(e) {
       closeModalSertificate(e);
       closeModalPortfolio(e);
       closeModalWeather(e);
+      closeModalBackpack(e);
     }
   });
 
   function openModal() {
-    //var modalOverlay = $(".modal__overlay");
-    //var modalDialog = $(".modal__dialog");
-    //modalOverlay.addClass("modal__overlay--visible");
-    //modalDialog.addClass("modal__dialog--visible");
     $('input').val('');
     $('textarea').val('');
     $("input").removeClass("invalid");
     $("label").remove(".invalid");
-    //modalDialog.scrollTop(0);
   }
   function closeModal(event) {
     event.preventDefault();
-    //var modalOverlay = $(".modal__overlay");
-    //var modalDialog = $(".modal__dialog");
-    //modalOverlay.removeClass("modal__overlay--visible");
-    //modalDialog.removeClass("modal__dialog--visible");
     $('input').val('');
     $('textarea').val('');
     $("input").removeClass("invalid");
@@ -255,14 +282,14 @@ i18next.init({
                 development: 'Development',
                 developmentText: 'I have practical experience in developing applications in Swift from scratch with subsequent release and support for updates.',
                 design: 'Design',
-                designText: 'I use Storyboard and design the app to meet Apple\'s HIG standards, which allows the app to pass validation when published to the AppStore.',
-                apiText: 'I have practical skills in building applications using the backend (REST API)',
+                designText: 'Familiar with ViewController LifeCycle, SceneDelegate LifeCycle. I use Storyboard and design the app to meet Apple\'s HIG standards, which allows the app to pass validation when published to the AppStore.',
+                apiText: 'Experience in developing client-server applications using REST-API.',
                 architecture: 'Architecture',
                 architectureText: 'Familiar with MVC, MVVM, SOLID, DRY, KISS, YAGNI principles.',
                 dateStorage: 'Data storage',
                 dataStorageText: 'I mostly prefer to use Realm and also familiar with CoreData, UserDefaults, NSCache, Keychain.',
                 technologies: 'Applied technologies',
-                technologiesText: 'UIKit, AutoLayout, MapKit, CoreLocation, CALayer, Firebase cloud messaging, CocoaPods, Alamofire, SDWebImage, Kingfisher, GCD, Unit & UI tests, TDD.',
+                technologiesText: 'UIKit, AutoLayout, MapKit, CoreLocation, CALayer, Firebase cloud messaging, CocoaPods, Swift Package Manager, NSNotificationCenter, Alamofire, SDWebImage, Kingfisher, GCD, Unit & UI tests, TDD.',
                 trainingTitle: 'Where did I study',
                 trainingSubTitleOwn: 'On my own',
                 trainingTextOwn: 'I started by watching videos on YouTube - I followed the authors of practical examples. Then I wrote small applications, consulted in chats, used educational literature, checked my skills by testing.',
@@ -293,7 +320,9 @@ i18next.init({
                 contactsMessage: 'Message',
                 contactsSend: 'Send',
                 contactsObligatory: '* Obligatory field',
-
+                projectTitleBackpack: '«Tourism»',
+                projectBackpackAppText0: 'At the moment I am working on a personal project \"Tourism\" in which I am involved: layout of elements in Interface Builder, layout of some screens through code, development of a custom view (change start date). Storage is arranged through CoreData.',
+                projectBackpackAppText1: 'At the end of development, a link to GitHub will be attached.',
               },
             }
           },
@@ -312,14 +341,14 @@ i18next.init({
                 development: 'Разработка',
                 developmentText: 'Имею практический опыт разработки с нуля приложения на языке Swift с последующим релизом и поддержкой обновлений.',
                 design: 'Проектирование',
-                designText: 'Использую Storyboard и проектирую приложение в соответствии со стандартами интерфейса компании Apple (HIG), что позволяет приложению успешно проходить проверку при публикации в AppStore.',
-                apiText: 'Имею практические навыки построения приложений с использованием бэкенда (REST API)',
+                designText: 'Знаком с ViewController LifeCycle, SceneDelegate LifeCycle. Использую Storyboard и проектирую приложение в соответствии со стандартами интерфейса компании Apple (HIG), что позволяет приложению успешно проходить проверку при публикации в AppStore.',
+                apiText: 'Есть опыт разработки клиент-серверных приложений с использованием REST-API.',
                 architecture: 'Архитектура',
                 architectureText: 'Знаком с MVC, MVVM, принципами SOLID, DRY, KISS, YAGNI.',
                 dateStorage: 'Хранение данных',
                 dataStorageText: 'В основном предпочитаю использовать Realm, а также знаком с CoreData, UserDefaults, NSCache, Keychain.',
                 technologies: 'Применяемые технологии',
-                technologiesText: 'UIKit, AutoLayout, MapKit, CoreLocation, CALayer, Firebase cloud messaging, CocoaPods, Alamofire, SDWebImage, Kingfisher, GCD, Unit & UI tests, TDD.',
+                technologiesText: 'UIKit, AutoLayout, MapKit, CoreLocation, CALayer, Firebase cloud messaging, CocoaPods, Swift Package Manager, NSNotificationCenter, Alamofire, SDWebImage, Kingfisher, GCD, Unit & UI tests, TDD.',
                 trainingTitle: 'Где учился',
                 trainingSubTitleOwn: 'Самостоятельно',
                 trainingTextOwn: 'Начинал с просмотра роликов на YouTube - повторял за авторами практических примеров. Далее - писал небольшие приложения, консультировался в чатах, использовал учебную литературу. Проверял полученные навыки тестированием.',
@@ -350,6 +379,9 @@ i18next.init({
                 contactsMessage: 'Сообщение',
                 contactsSend: 'Отправить',
                 contactsObligatory: '* Обязательное поле',
+                projectTitleBackpack: '«Tourism»',
+                projectBackpackAppText0: 'На данный момент работаю над личным проектом "Tourism" в котором задействованы: верстка элементов в Interface Builder, верстка некоторых экранов через код, разработка кастомного view (change start date). Хранение устроено через CoreData.',
+                projectBackpackAppText1: 'По окончанию разработки будет прикреплена ссылка на GitHub.',
               }
             }
           },

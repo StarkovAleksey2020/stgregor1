@@ -65,6 +65,25 @@
     &-buttons
       &-block
         width: 98%
+  .backpack
+    &-wrapper
+      width: 90%
+    &-slider
+      height: 600px
+    &-screen
+      width: 85%
+      -webkit-transform: none
+      transform: none
+      opacity: 1
+      box-shadow: none
+      &:hover
+        -webkit-transform: none
+        transform: none
+        opacity: 1
+        box-shadow: none
+    &-buttons
+      &-block
+        width: 98%
   label.invalid
     font-size: 10px
   .certificates
@@ -244,10 +263,31 @@
     &-slata
       &__link
         font-size: 16px
-    &-weather
+    &-weather, &-backpack
       &__link
         font-size: 16px
   .weather
+    &-wrapper
+      width: 100%
+      flex-direction: column
+    &-screen
+      height: auto
+      width: 80%
+    &-title
+      font-size: 32px
+    &-text
+      font-size: 14px
+      line-height: 20px
+    &-slider
+      margin: 0 auto
+    &-buttons
+      &-block
+        width: 95%
+      &__image
+        &--right, &--left
+          width: 25px
+          height: 25px
+  .backpack
     &-wrapper
       width: 100%
       flex-direction: column
@@ -361,6 +401,9 @@
     &-screenshots
       flex-wrap: wrap
   .weather
+    &-slider
+      height: 550px
+  .backpack
     &-slider
       height: 550px
   .footer
@@ -490,6 +533,20 @@
         &--right, &--left
           width: 20px
           height: 20px
+  .backpack
+    &-title
+      font-size: 30px
+      line-height: 32px
+    &-slider
+      width: 270px
+      &-buttons
+        &-block
+          width: 98%
+    &-buttons
+      &__image
+        &--right, &--left
+          width: 20px
+          height: 20px
   .footer
     &-title
       font-size: 30px
@@ -497,8 +554,18 @@
   .swiper
     &-slide
       justify-content: flex-start
+@media (max-width: 400px)
+  .portfolio
+    &-header
+      &-menu
+        &__item
+          font-size: 12px
+          padding: 5px
+          width: 95px
+          &--active
+            font-size: 13px
+            font-weight: 600
 @media (max-width: 320px)
-  .container
   .certificates
     &-slider
       width: 260px
@@ -520,6 +587,15 @@
           width: 20px
           height: 20px
   .weather
+    &-slider
+      height: 300px
+      width: 300px
+    &-buttons
+      &__image
+        &--right, &--left
+          width: 20px
+          height: 20px
+  .backpack
     &-slider
       height: 300px
       width: 300px
